@@ -1,6 +1,6 @@
 # BFF Quiz
 
-A fun friendship quiz application where users can create custom quizzes to test how well their friends know them.
+A fun friendship quiz application where users can create custom quizzes to test how well their friends know them。
 
 ## Website
 https://bffquiz-five.vercel.app/
