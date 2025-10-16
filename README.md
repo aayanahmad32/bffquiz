@@ -2,6 +2,9 @@
 
 A fun friendship quiz application where users can create custom quizzes to test how well their friends know them.
 
+## Website
+https://bffquiz-five.vercel.app/
+
 ## Features
 
 - Create custom friendship quizzes with 100+ pre-defined questions
@@ -25,6 +28,11 @@ A fun friendship quiz application where users can create custom quizzes to test 
 - JSONBlob for data storage
 - PWA (Progressive Web App) capabilities
 
+## Contact
+
+- Instagram: https://www.instagram.com/looplabstech
+- Feedback: Please report any issues or suggestions via our Instagram
+
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under a custom license. For commercial use, please contact us at https://www.instagram.com/looplabstech for permission.
