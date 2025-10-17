@@ -1,38 +1,35 @@
 # BFF Quiz
 
-A fun friendship quiz application where users can create custom quizzes to test how well their friends know them。
+Create and share friendship quizzes with your friends! See how well your friends know you with 100+ fun questions.
 
 ## Website
-https://bffquiz-five.vercel.app/
+
+🔥 [https://bffquiz-five.vercel.app/](https://bffquiz-five.vercel.app/)
 
 ## Features
 
-- Create custom friendship quizzes with 100+ pre-defined questions
-- Select 5, 10, 15, or 20 questions for your quiz
-- Share quizzes with friends via WhatsApp, Instagram, and other social platforms
-- View leaderboards to see who scored the highest
-- Track your quiz creation and participation history
-- Install as a PWA (Progressive Web App) for a native app experience
+- Create personalized friendship quizzes
+- Choose from 100+ pre-made questions
+- Share quiz links with friends
+- Track scores on a leaderboard
+- Responsive design for all devices
 
-## Getting Started
+## How to Use
 
-1. Clone this repository
-2. Deploy to Vercel or any other hosting platform
-3. Customize the domain name in the meta tags and sitemap
+1. Enter your name
+2. Select the number of questions (5, 10, 15, or 20)
+3. Choose questions from the question bank
+4. Customize answers if needed
+5. Share the generated link with friends
+6. See who knows you best!
 
-## Tech Stack
+## Technologies Used
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
-- JSONBlob for data storage
-- PWA (Progressive Web App) capabilities
-
-## Contact
-
-- Instagram: https://www.instagram.com/looplabstech
-- Feedback: Please report any issues or suggestions via our Instagram
+- JavaScript
+- Vercel for hosting
 
 ## License
 
-This project is licensed under a custom license. For commercial use, please contact us at https://www.instagram.com/looplabstech for permission.
+This project is licensed under the custom License.

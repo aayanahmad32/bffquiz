@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://bffquiz-five.vercel.app/sitemap.xml
-Crawl-delay: 1

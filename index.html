@@ -173,26 +173,6 @@
       position: relative;
       overflow: hidden;
     }
-    .container::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        45deg,
-        transparent,
-        rgba(255, 107, 203, 0.05),
-        transparent
-      );
-      transform: rotate(45deg);
-      animation: shimmer 3s infinite;
-    }
-    @keyframes shimmer {
-      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-    }
     h1, h2, h3 { 
       text-align: center; 
       color: var(--primary-accent); 
@@ -229,21 +209,6 @@
     }
     .btn-purple { 
       background: linear-gradient(to right, var(--primary-accent), var(--secondary-accent)); 
-      position: relative;
-      overflow: hidden;
-    }
-    .btn-purple::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.5s;
-    }
-    .btn-purple:hover::before {
-      left: 100%;
     }
     button:hover, .social-btn-stacked:hover { 
       transform: translateY(-2px); 
@@ -264,21 +229,6 @@
       text-align: left; 
       background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent)); 
       grid-column: span 1; 
-      position: relative;
-      overflow: hidden;
-    }
-    .main-action-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.5s;
-    }
-    .main-action-btn:hover::before {
-      left: 100%;
     }
     .main-action-btn.full-width { grid-column: span 2; }
     .main-action-btn svg { width: 28px; height: 28px; flex-shrink: 0; }
@@ -419,11 +369,6 @@
     }
     .install-prompt.show {
       display: block;
-      animation: slideUp 0.5s ease;
-    }
-    @keyframes slideUp {
-      from { transform: translateY(100%); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
     }
     .install-prompt h4 {
       margin: 0 0 10px 0;
@@ -516,64 +461,6 @@
       font-size: 14px;
       line-height: 1.4;
     }
-    /* IMPROVEMENTS */
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    .fade-in {
-      animation: fadeIn 0.5s ease-in;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .slide-up {
-      animation: slideUp 0.5s ease-out;
-    }
-    @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .notification {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--secondary-bg);
-      border: 1px solid var(--primary-accent);
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      max-width: 300px;
-      z-index: 1000;
-      display: none;
-    }
-    .notification.show {
-      display: block;
-      animation: slideInRight 0.5s ease-out;
-    }
-    @keyframes slideInRight {
-      from { transform: translateX(100%); }
-      to { transform: translateX(0); }
-    }
-    .notification.success {
-      border-color: #4caf50;
-    }
-    .notification.error {
-      border-color: #f44336;
-    }
-    .notification-title {
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: var(--primary-accent);
-    }
-    .notification-message {
-      font-size: 14px;
-    }
     /* Loading Animation */
     .loader {
       border: 4px solid rgba(255, 255, 255, 0.1);
@@ -595,7 +482,7 @@
 </head>
 <body>
 
-<!-- Home Page -->
+<!-- Home Page (Default) -->
 <div id="home" class="container">
   <!-- Logo -->
   <div class="logo-container">
@@ -685,7 +572,7 @@
       </div>
       <div class="review-rating">
         <span class="star">★</span>
-        <span class="to">★</span>
+        <span class="star">★</span>
         <span class="star">★</span>
         <span class="star">★</span>
         <span class="star">☆</span>
@@ -745,7 +632,7 @@
 <div id="play" class="container hidden">
   <!-- Logo -->
   <div class="logo-container">
-    <https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
   </div>
   
   <h2 id="quizTitle"></h2>
@@ -783,7 +670,7 @@
           'params' : {}
         };
       </script>
-      <script type="text/javascript" src="//www.highperformance scripts/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
     </div>
   </div>
 </div>
@@ -814,7 +701,7 @@
     <script type="text/javascript">
       atOptions = {
         'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0',
+        'format' : 'iframe',
         'height' : 250,
         'width' : 300,
         'touch-icon' : 'true',
@@ -852,7 +739,7 @@
       <script type="text/javascript">
         atOptions = {
           'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-          'format' : 'www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0',
+          'format' : 'iframe',
           'height' : 250,
           'width' : 300,
           'touch-icon' : 'true',
@@ -878,10 +765,10 @@
     <script type="text/javascript">
       atOptions = {
         'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0',
+        'format' : 'iframe',
         'height' : 250,
         'width' : 300,
-        'touch-icon' : 'touch-icon' : 'true',
+        'touch-icon' : 'true',
         'params' : {}
       };
     </script>
@@ -910,7 +797,6 @@
 <a href="https://www.instagram.com/looplabstech?igsh=MW11cDRoMnhmdDBqaw==" target="_blank" class="instagram-btn">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.012 4.849-.07 3.252.148 4.919 4.919.058 1.265.069 1.645.069 4.849-.07 3.252.148 4.919-4.919zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-6.98 6.98zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-6.98zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-6.98zM5.838 12a6.162 6.162 0 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
-  </svg>
   </svg>
 </a>
 
@@ -1028,7 +914,7 @@ const allQuestions = [
     { q: "What is my biggest insecurity?", o: ["My looks", "My career", "My future", "I'm very secure"], a: "My future" },
     { q: "If I needed help, what would I ask for?", o: ["Money", "Advice", "A ride", "Emotional support"], a: "Emotional support" },
     { q: "What's my go-to excuse for being late?", o: ["Traffic", "Woke up late", "Feeling unwell", "I'm never late"], a: "Traffic" },
-    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔�"], a: "😂" },
+    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔"], a: "😂" },
     { q: "What do I value most in a friendship?", o: ["Honesty", "Loyalty", "Fun", "Support"], a: "Loyalty" },
     { q: "What's a secret I've never told anyone?", o: ["My first crush", "An embarrassing moment", "A hidden talent", "Nice try!"], a: "Nice try!" },
     { q: "What gift would I love the most?", o: ["Gadget", "A surprise trip", "Handmade gift", "Clothes"], a: "A surprise trip" },
@@ -1050,7 +936,7 @@ const allQuestions = [
     { q: "If I had to eat one food for the rest of my life, what would it be?", o: ["Dal Chawal", "Pizza", "Chicken Curry", "Noodles"], a: "Dal Chawal" },
     { q: "If I could be famous for one thing, what would it be?", o: ["Being an actor", "Being a scientist", "Being a humanitarian", "Being a sports star"], a: "Being a scientist" },
     { q: "If I get a day off, I would prefer to:", o: ["Sleep all day", "Go on a long drive", "Binge-watch shows", "Hang out with friends"], a: "Binge-watch shows" },
-    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour", "Sour"], a: "Spicy" }
+    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" }
 ];
 
 let creatorName = '', currentQuizForCreation = [], selectedQuestionCount = 5;
@@ -1109,11 +995,6 @@ dismissBtn.addEventListener('click', () => {
 function showPage(pageId) { 
   document.querySelectorAll('.container').forEach(el => el.classList.add('hidden')); 
   document.getElementById(pageId).classList.remove('hidden');
-  
-  // Add animation to the page
-  const page = document.getElementById(pageId);
-  page.classList.add('fade-in');
-  setTimeout(() => page.classList.remove('fade-in'), 500);
 }
 
 // --- Home Page Logic ---
@@ -1192,7 +1073,6 @@ function setQuestionCount(count) {
 }
 function showQuestionModal() { 
   document.getElementById('questionModal').classList.remove('hidden');
-  document.getElementById('questionModal').classList.add('fade-in');
   renderModalList(); 
 }
 function closeQuestionModal() { 
@@ -1226,7 +1106,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1341,7 +1221,7 @@ function displayShareableLink(url) {
     shareBox.classList.remove('hidden');
     document.getElementById('shareLink').textContent = url;
     const homeUrl = window.location.href.split('?')[0].split('#')[0];
-    const shareMessage = `🔥 ${creatorName} has challenged you to a Friendship Quiz! 🔥\n\n"Kya tum sach me mujhe jaante ho? 🤔�\n\nClick here to prove it and see your score! 👉 ${url}\n\n---\n👉 Create your own quiz here: ${homeUrl}`;
+    const shareMessage = `🔥 ${creatorName} has challenged you to a Friendship Quiz! 🔥\n\n"Kya tum sach me mujhe jaante ho? 🤔\n\nClick here to prove it and see your score! 👉 ${url}\n\n---\n👉 Create your own quiz here: ${homeUrl}`;
     const encodedShareMessage = encodeURIComponent(shareMessage);
     const encodedUrl = encodeURIComponent(url);
     const encodedTitle = encodeURIComponent(`🔥 ${creatorName} has challenged you!`);
@@ -1356,7 +1236,6 @@ function displayShareableLink(url) {
         <a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>
         <a href="snapchat://creativekit/camera/1?attachmentUrl=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Snapchat</a>
     `;
-}
 }
 function shareOnInstagram() {
     const url = document.getElementById('shareLink').textContent;
@@ -1416,7 +1295,7 @@ function startQuiz() {
 function loadQuestion() {
     if (currentQuestionIndex >= currentQuizData.questions.length) { finishQuiz(); return; }
     const q = currentQuizData.questions[currentQuestionIndex];
-    document.getElementById('quizContent').innerHTML = `<div class="question-block slide-up"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div>`;
+    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div>`;
     document.getElementById('inQuizAd').classList.remove('hidden'); // Show ad with question
 }
 function submitAnswer() {
