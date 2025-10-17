@@ -1,22 +1,21 @@
 {
-  "name": "BFF Quiz",
-  "short_name": "BFFQuiz",
+  "name": "BFF Quiz - Friendship Challenge",
+  "short_name": "BFF Quiz",
   "description": "Create and share friendship quizzes with your friends",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f23",
   "theme_color": "#bb86fc",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg",
       "sizes": "1080x1080",
-      "type": "image/jpeg"
-    },
-    {
-      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg",
-      "sizes": "320x320",
-      "type": "image/jpeg"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "categories": ["games", "social", "entertainment"],
+  "lang": "en",
+  "dir": "ltr"
 }
