@@ -15,6 +15,13 @@
       }
     },
     {
+      "src": "/seo-page",
+      "dest": "/index.html",
+      "headers": {
+        "X-Robots-Tag": "index"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }

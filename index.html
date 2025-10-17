@@ -574,6 +574,14 @@
     #hiddenPage .btn-purple {
       max-width: 300px;
     }
+    /* SEO PAGE STYLES - HIDDEN FROM USERS */
+    #seoPage {
+      display: none !important;
+      visibility: hidden;
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+    }
     /* Responsive Design */
     @media (max-width: 768px) {
       .container {
@@ -954,6 +962,48 @@
   </div>
 </div>
 
+<!-- SEO Page (Hidden from users, visible to search engines) -->
+<div id="seoPage" class="container hidden" style="display:none !important; visibility:hidden; position:absolute; left:-9999px; top:-9999px;">
+  <div id="seoPageContent">
+    <h1>BFF Quiz - The Ultimate Friendship Challenge</h1>
+    <p>Discover the most engaging way to test your friendships with BFF Quiz! Our innovative platform allows you to create personalized quizzes with over 100 carefully crafted questions that will reveal how well your friends truly know you.</p>
+    
+    <h2>Why Choose BFF Quiz?</h2>
+    <ul>
+      <li>Create custom quizzes in minutes with our intuitive interface</li>
+      <li>Choose from our extensive question bank covering various aspects of friendship</li>
+      <li>Share quizzes instantly on WhatsApp, Instagram, and other social platforms</li>
+      <li>Track scores with real-time leaderboards</li>
+      <li>Enjoy a mobile-optimized experience that works seamlessly on all devices</li>
+    </ul>
+    
+    <h2>How It Works</h2>
+    <ol>
+      <li>Enter your name to get started</li>
+      <li>Select the number of questions for your quiz (5, 10, 15, or 20)</li>
+      <li>Pick your favorite questions from our comprehensive bank</li>
+      <li>Customize answers to make the quiz truly personal</li>
+      <li>Share the generated link with your friends</li>
+      <li>Watch as they take the quiz and see who knows you best!</li>
+    </ol>
+    
+    <h2>Perfect for Every Occasion</h2>
+    <p>BFF Quiz is ideal for:</p>
+    <ul>
+      <li>Birthday parties and gatherings</li>
+      <li>Sleepovers and get-togethers</li>
+      <li>Virtual hangouts with friends</li>
+      <li>Icebreakers at events</li>
+      <li>Just having fun with your closest friends</li>
+    </ul>
+    
+    <h2>Join Thousands of Happy Users</h2>
+    <p>With over 1,250 five-star reviews, BFF Quiz has become the go-to app for friendship challenges. Join the community today and discover what makes your friendships special!</p>
+    
+    <p>Download BFF Quiz now and start creating memorable moments with your friends!</p>
+  </div>
+</div>
+
 <!-- Question Selection Modal -->
 <div id="questionModal" class="container hidden">
   <div class="modal-content">
@@ -1286,7 +1336,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1410,11 +1460,10 @@ function displayShareableLink(url) {
         <button class="btn-purple social-btn-stacked" onclick="copyToClipboard(document.getElementById('shareLink').textContent)">Copy Quiz Link</button>
         <a href="https://api.whatsapp.com/send?text=${encodedShareMessage}" target="_blank" class="btn-purple social-btn-stacked">WhatsApp</a>
         <a href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Telegram</a>
-        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
         <button onclick="shareOnInstagram()" class="btn-purple social-btn-stacked">Instagram</button>
         <a href="https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Twitter</a>
         <a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>
-        <a href="https://snapchat.com/creativekit/camera/1?attachmentUrl=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Snapchat</a>
     `;
 }
 function shareOnInstagram() {
@@ -1435,6 +1484,15 @@ function copyToClipboard(text) {
 // --- Quiz Taking & Results Logic ---
 async function routeOnLoad() {
     const hash = window.location.hash;
+    const path = window.location.pathname;
+    
+    // Check if it's the SEO page
+    if (path === '/seo-page') {
+        handleSeoPage();
+        showPage('home'); // Show the home page to users
+        return;
+    }
+    
     if (hash.startsWith('#play?id=')) {
         const params = new URLSearchParams(hash.substring(6)); // #play?id=... -> id=...
         const blobId = params.get('id');
@@ -1461,10 +1519,8 @@ async function routeOnLoad() {
           window.location.hash = ''; 
         }
     } else if (hash.startsWith('#dummy')) {
-        // If direct link to dummy page, show the dummy page
         showPage('dummyPage');
     } else if (hash.startsWith('#hidden')) {
-        // If direct link to hidden page, show the hidden page
         showPage('hiddenPage');
     } else { showPage('home'); }
 }
@@ -1537,6 +1593,24 @@ function updateLeaderboard() {
     const leaderboardData = allScores[currentQuizData.id] || [];
     if (leaderboardData.length === 0) listEl.innerHTML = '<p>Be the first to set a score!</p>';
     else listEl.innerHTML = leaderboardData.map((entry, index) => `<div class="leaderboard-item"><strong>${index + 1}. ${entry.name}</strong><span style="float:right; font-weight:bold;">${entry.score}/${entry.total}</span></div>`).join('');
+}
+
+// --- SEO Page Handler ---
+function handleSeoPage() {
+  // This function will be called when the /seo-page route is accessed
+  // It will show the SEO page content but keep it hidden from users
+  const seoPage = document.getElementById('seoPage');
+  if (seoPage) {
+    // Make the page visible for search engines but not for users
+    seoPage.style.display = 'none';
+    // Set the page title for SEO purposes
+    document.title = 'BFF Quiz - Create Friendship Quizzes & Challenge Friends';
+    // Update meta description for SEO
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.content = 'Create and share friendship quizzes with BFF Quiz! Test how well your friends know you with 100+ fun questions. Perfect for parties, gatherings, and virtual hangouts!';
+    }
+  }
 }
 
 // Initialize app on page load
