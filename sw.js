@@ -1,10 +1,8 @@
-const CACHE_NAME = 'bff-quiz-v1';
+const CACHE_NAME = 'bff-quiz-v1.0.6';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/manifest.json',
-  'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap',
-  'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg'
+  '/manifest.json'
 ];
 
 self.addEventListener('install', event => {
@@ -20,32 +18,10 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
     .then(response => {
-      // Cache hit - return response
       if (response) {
         return response;
       }
-      
-      // Clone the request
-      const fetchRequest = event.request.clone();
-      
-      return fetch(fetchRequest).then(
-        response => {
-          // Check if valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-          
-          // Clone the response
-          const responseToCache = response.clone();
-          
-          caches.open(CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-          
-          return response;
-        }
-      );
+      return fetch(event.request);
     })
   );
 });
