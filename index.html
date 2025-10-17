@@ -1424,9 +1424,20 @@ function saveScore() {
     if (!allScores[quizId]) allScores[quizId] = [];
     const existingIndex = allScores[quizId].findIndex(e => e.name === takerName);
     if (existingIndex > -1) { if (score > allScores[quizId][existingIndex].score) allScores[quizId][existingIndex] = { name: takerName, score, total: currentQuizData.questions.length }; }
-    else { allScores[quizId].push({ name: takerName, score, total: currentQuizData.questions.length, date: new Date().toISOString(), url: window.location.href });
-    if(playerHistory.length > 20) playerHistory.shift();
-    localStorage.setItem('playerHistory', JSON.stringify(playerHistory));
+    else { 
+        allScores[quizId].push({ name: takerName, score, total: currentQuizData.questions.length, date: new Date().toISOString(), url: window.location.href });
+        // Save to player history
+        let playerHistory = JSON.parse(localStorage.getItem('playerHistory') || '[]');
+        playerHistory.push({ 
+            creator: currentQuizData.creator, 
+            score: score, 
+            total: currentQuizData.questions.length, 
+            date: new Date().toISOString(), 
+            url: window.location.href 
+        });
+        if(playerHistory.length > 20) playerHistory.shift();
+        localStorage.setItem('playerHistory', JSON.stringify(playerHistory));
+    }
     localStorage.setItem('allScores', JSON.stringify(allScores));
 }
 function updateLeaderboard() {
@@ -1437,6 +1448,7 @@ function updateLeaderboard() {
     else listEl.innerHTML = leaderboardData.map((entry, index) => `<div class="leaderboard-item"><strong>${index + 1}. ${entry.name}</strong><span style="float:right; font-weight:bold;">${entry.score}/${entry.total}</span></div>`).join('');
 }
 
+// Initialize app on page load
 window.addEventListener('load', routeOnLoad);
 window.addEventListener('hashchange', routeOnLoad);
 </script>
