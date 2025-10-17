@@ -555,6 +555,26 @@
     #dummyPage .btn-purple {
       max-width: 300px;
     }
+    /* HIDDEN PAGE STYLES */
+    #hiddenPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+    #hiddenPage h2 {
+      margin-bottom: 20px;
+      color: var(--primary-accent);
+    }
+    #hiddenPage p {
+      margin-bottom: 30px;
+      max-width: 400px;
+    }
+    #hiddenPage .btn-purple {
+      max-width: 300px;
+    }
   </style>
   
   <!-- Non-Critical CSS - Loaded after initial render -->
@@ -862,6 +882,24 @@
   <div id="dummyPageContent">
     <h2>This is a Hidden Page</h2>
     <p>This page is not accessible from the main navigation. It's only accessible through direct links and is included in the sitemap for SEO purposes.</p>
+    <button class="btn-purple" onclick="showPage('home')">Go to Home Page</button>
+  </div>
+</div>
+
+<!-- Hidden Page (SEO Only) -->
+<div id="hiddenPage" class="container hidden">
+  <div id="hiddenPageContent">
+    <h2>BFF Quiz - SEO Page</h2>
+    <p>This is a hidden page designed specifically for SEO purposes. It helps improve the website's visibility on search engines and ensures better indexing.</p>
+    <p>BFF Quiz is a fun and interactive way to test your friendship bonds. Create custom quizzes with our extensive question bank and challenge your friends to see who knows you best!</p>
+    <p>Features include:</p>
+    <ul style="text-align: left; max-width: 400px;">
+      <li>100+ pre-written questions</li>
+      <li>Customizable quiz options</li>
+      <li>Real-time leaderboards</li>
+      <li>Social sharing capabilities</li>
+      <li>Mobile-friendly design</li>
+    </ul>
     <button class="btn-purple" onclick="showPage('home')">Go to Home Page</button>
   </div>
 </div>
@@ -1375,6 +1413,9 @@ async function routeOnLoad() {
     } else if (hash.startsWith('#dummy')) {
         // If direct link to dummy page, show the dummy page
         showPage('dummyPage');
+    } else if (hash.startsWith('#hidden')) {
+        // If direct link to hidden page, show the hidden page
+        showPage('hiddenPage');
     } else { showPage('home'); }
 }
 function startQuiz() {
