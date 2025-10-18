@@ -574,13 +574,72 @@
     #hiddenPage .btn-purple {
       max-width: 300px;
     }
-    /* SEO PAGE STYLES - HIDDEN FROM USERS */
-    #seoPage {
-      display: none !important;
-      visibility: hidden;
-      position: absolute;
-      left: -9999px;
-      top: -9999px;
+    /* ABOUT PAGE STYLES */
+    #aboutPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+    #aboutPage h2 {
+      margin-bottom: 20px;
+      color: var(--primary-accent);
+    }
+    #aboutPage p {
+      margin-bottom: 20px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+    #aboutPage .contact-info {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #aboutPage .contact-info h3 {
+      margin-top: 0;
+      color: var(--secondary-accent);
+    }
+    #aboutPage .contact-info p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    #aboutPage .contact-info a {
+      color: var(--primary-accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    #aboutPage .contact-info a:hover {
+      color: var(--secondary-accent);
+    }
+    /* RANDOM QUIZ STYLES */
+    #randomQuizPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+    #randomQuizPage h2 {
+      margin-bottom: 20px;
+      color: var(--primary-accent);
+    }
+    #randomQuizPage p {
+      margin-bottom: 30px;
+      max-width: 400px;
+    }
+    #randomQuizPage .btn-purple {
+      max-width: 300px;
     }
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -742,6 +801,10 @@
   <!-- Footer -->
   <div class="footer-credit">
     <p>LoopLabs - All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#" onclick="showAboutPage(); return false;">About</a>
+    </div>
   </div>
 </div>
 
@@ -783,6 +846,10 @@
   <!-- Footer -->
   <div class="footer-credit">
     <p>LoopLabs - All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#" onclick="showAboutPage(); return false;">About</a>
+    </div>
   </div>
 </div>
 
@@ -872,6 +939,10 @@
   <!-- Footer -->
   <div class="footer-credit">
     <p>LoopLabs - All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#" onclick="showAboutPage(); return false;">About</a>
+    </div>
   </div>
 </div>
 
@@ -933,6 +1004,94 @@
     <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
   </div>
   <button class="btn-purple" onclick="showPage('home')" style="margin-top:20px;" aria-label="Back to home">Back to Home</button>
+</div>
+
+<!-- Random Quiz Page -->
+<div id="randomQuizPage" class="container hidden">
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+  </div>
+  
+  <h1>Random Quiz</h1>
+  <p style="text-align:center;">Try our randomly generated friendship quiz!</p>
+  
+  <div id="randomQuiz">
+    <div class="question-block">
+      <h3 id="randomQuestionText">Loading question...</h3>
+      <div id="randomOptions"></div>
+    </div>
+    
+    <button class="btn-purple" onclick="submitRandomQuiz()">Submit Answer</button>
+    <button class="btn-purple" onclick="generateNewRandomQuestion()">New Question</button>
+    <button class="btn-purple" onclick="showPage('home')">Back to Home</button>
+  </div>
+  
+  <div id="randomResult" class="hidden">
+    <h2>Your Answer</h2>
+    <p id="randomAnswerText" style="text-align:center; font-size: 1.2rem;"></p>
+    <p id="randomExplanation" style="text-align:center; margin: 20px 0;"></p>
+    <button class="btn-purple" onclick="generateNewRandomQuestion()">Try Another Question</button>
+    <button class="btn-purple" onclick="showPage('home')">Back to Home</button>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs - All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#" onclick="showPage('home'); return false;">Home</a>
+      <a href="#" onclick="showAboutPage(); return false;">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- About Page -->
+<div id="aboutPage" class="container hidden">
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+  </div>
+  
+  <h1>About BFF Quiz</h1>
+  <p>BFF Quiz is a fun and interactive platform that allows you to create personalized friendship quizzes to test how well your friends know you. With our extensive question bank, you can create unique quizzes that reveal interesting aspects of your personality and friendships.</p>
+  
+  <p>Our mission is to strengthen friendships through fun and engaging challenges. Whether you're at a party, hanging out with friends, or just want to have some fun online, BFF Quiz is the perfect way to connect and create memorable moments.</p>
+  
+  <div class="contact-info">
+    <h3>Contact Us</h3>
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="m22 7-10 5L2 7"></path>
+      </svg>
+      <a href="mailto:contact@looplabs.tech">contact@looplabs.tech</a>
+    </p>
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+      <a href="https://www.instagram.com/looplabstech" target="_blank">@looplabstech</a>
+    </p>
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+      </svg>
+      <a href="https://github.com/looplabstech" target="_blank">github.com/looplabstech</a>
+    </p>
+  </div>
+  
+  <button class="btn-purple" onclick="showPage('home')">Back to Home</button>
+  
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs - All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#" onclick="showPage('home'); return false;">Home</a>
+    </div>
+  </div>
 </div>
 
 <!-- Dummy Page (Hidden) -->
@@ -1169,8 +1328,43 @@ const allQuestions = [
     { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" }
 ];
 
+// Random Quiz Questions
+const randomQuizQuestions = [
+    {
+        q: "What's the most important quality in a friendship?",
+        o: ["Honesty", "Loyalty", "Trust", "Communication"],
+        a: "Trust",
+        e: "Trust forms the foundation of any strong friendship. Without trust, it's difficult to be vulnerable and open with your friends."
+    },
+    {
+        q: "How often should friends check in on each other?",
+        o: ["Daily", "Weekly", "Monthly", "Whenever we feel like it"],
+        a: "Weekly",
+        e: "Weekly check-ins strike a good balance between staying connected and giving each other space. Of course, this can vary based on the friendship!"
+    },
+    {
+        q: "What's the best way to resolve a conflict with a friend?",
+        o: ["Talk it out openly", "Give each other space", "Get a mutual friend to mediate", "Ignore it and hope it goes away"],
+        a: "Talk it out openly",
+        e: "Open communication is key to resolving conflicts. Addressing issues directly and honestly helps prevent misunderstandings from growing."
+    },
+    {
+        q: "What's the ideal length of a friendship?",
+        o: ["A few months", "A few years", "Many years", "Lifelong"],
+        a: "Lifelong",
+        e: "While not all friendships last forever, the goal is often to build connections that can withstand the test of time and life changes."
+    },
+    {
+        q: "How many close friends does the average person have?",
+        o: ["1-2", "3-5", "6-10", "More than 10"],
+        a: "3-5",
+        e: "Research suggests that most people maintain about 3-5 close friendships throughout their adult lives. Quality is more important than quantity!"
+    }
+];
+
 let creatorName = '', currentQuizForCreation = [], selectedQuestionCount = 5;
 let currentQuizData = null, currentQuestionIndex = 0, score = 0, takerName = '';
+let currentRandomQuestion = null;
 
 // --- NOTIFICATION SYSTEM ---
 function showNotification(title, message, type = 'success') {
@@ -1225,6 +1419,69 @@ dismissBtn.addEventListener('click', () => {
 function showPage(pageId) { 
   document.querySelectorAll('.container').forEach(el => el.classList.add('hidden')); 
   document.getElementById(pageId).classList.remove('hidden');
+}
+
+// --- Random Quiz Functions ---
+function showRandomQuiz() {
+  showPage('randomQuizPage');
+  generateNewRandomQuestion();
+}
+
+function generateNewRandomQuestion() {
+  // Reset result view if visible
+  document.getElementById('randomQuiz').classList.remove('hidden');
+  document.getElementById('randomResult').classList.add('hidden');
+  
+  // Select a random question
+  const randomIndex = Math.floor(Math.random() * randomQuizQuestions.length);
+  currentRandomQuestion = randomQuizQuestions[randomIndex];
+  
+  // Display the question
+  document.getElementById('randomQuestionText').textContent = currentRandomQuestion.q;
+  
+  // Create option elements
+  const optionsContainer = document.getElementById('randomOptions');
+  optionsContainer.innerHTML = '';
+  
+  currentRandomQuestion.o.forEach((option, index) => {
+    const optionDiv = document.createElement('div');
+    optionDiv.className = 'option-item';
+    optionDiv.innerHTML = `
+      <input type="radio" id="randomOption${index}" name="randomAnswer" value="${option}">
+      <label for="randomOption${index}">${option}</label>
+    `;
+    optionsContainer.appendChild(optionDiv);
+  });
+}
+
+function submitRandomQuiz() {
+  const selectedOption = document.querySelector('input[name="randomAnswer"]:checked');
+  
+  if (!selectedOption) {
+    showNotification('Error', 'Please select an answer!', 'error');
+    return;
+  }
+  
+  // Show result
+  document.getElementById('randomQuiz').classList.add('hidden');
+  document.getElementById('randomResult').classList.remove('hidden');
+  
+  const isCorrect = selectedOption.value === currentRandomQuestion.a;
+  document.getElementById('randomAnswerText').textContent = 
+    `You selected: ${selectedOption.value} ${isCorrect ? '✓' : '✗'}`;
+  
+  document.getElementById('randomExplanation').textContent = currentRandomQuestion.e;
+  
+  // Show notification
+  showNotification(
+    isCorrect ? 'Correct!' : 'Not quite', 
+    isCorrect ? 'Great job! You understand this aspect of friendship.' : 'That\'s an interesting perspective! Every friendship is different.'
+  );
+}
+
+// --- About Page Functions ---
+function showAboutPage() {
+  showPage('aboutPage');
 }
 
 // --- Home Page Logic ---
@@ -1336,7 +1593,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1486,10 +1743,15 @@ async function routeOnLoad() {
     const hash = window.location.hash;
     const path = window.location.pathname;
     
-    // Check if it's the SEO page
-    if (path === '/seo-page') {
-        handleSeoPage();
-        showPage('home'); // Show the home page to users
+    // Check if it's the about page
+    if (path === '/about') {
+        showAboutPage();
+        return;
+    }
+    
+    // Check if it's the random quiz page
+    if (path === '/random') {
+        showRandomQuiz();
         return;
     }
     
@@ -1593,24 +1855,6 @@ function updateLeaderboard() {
     const leaderboardData = allScores[currentQuizData.id] || [];
     if (leaderboardData.length === 0) listEl.innerHTML = '<p>Be the first to set a score!</p>';
     else listEl.innerHTML = leaderboardData.map((entry, index) => `<div class="leaderboard-item"><strong>${index + 1}. ${entry.name}</strong><span style="float:right; font-weight:bold;">${entry.score}/${entry.total}</span></div>`).join('');
-}
-
-// --- SEO Page Handler ---
-function handleSeoPage() {
-  // This function will be called when the /seo-page route is accessed
-  // It will show the SEO page content but keep it hidden from users
-  const seoPage = document.getElementById('seoPage');
-  if (seoPage) {
-    // Make the page visible for search engines but not for users
-    seoPage.style.display = 'none';
-    // Set the page title for SEO purposes
-    document.title = 'BFF Quiz - Create Friendship Quizzes & Challenge Friends';
-    // Update meta description for SEO
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.content = 'Create and share friendship quizzes with BFF Quiz! Test how well your friends know you with 100+ fun questions. Perfect for parties, gatherings, and virtual hangouts!';
-    }
-  }
 }
 
 // Initialize app on page load

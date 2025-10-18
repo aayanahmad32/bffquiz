@@ -1,5 +1,5 @@
 {
-  "name": "BFF Quiz - Friendship Challenge",
+  "name": "BFF Quiz - Create Friendship Quizzes",
   "short_name": "BFF Quiz",
   "description": "Create and share friendship quizzes with your friends",
   "start_url": "/",
@@ -10,12 +10,14 @@
   "icons": [
     {
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg",
-      "sizes": "1080x1080",
-      "type": "image/jpeg",
-      "purpose": "any maskable"
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
     }
   ],
-  "categories": ["games", "social", "entertainment"],
-  "lang": "en",
-  "dir": "ltr"
+  "splash_pages": null
 }
