@@ -1,29 +1,12 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml",
       "headers": {
-        "Content-Type": "application/xml"
+        "Content-Type": "application/xml",
+        "Cache-Control": "public, max-age=86400"
       }
-    },
-    {
-      "src": "/seo-page",
-      "dest": "/index.html",
-      "headers": {
-        "X-Robots-Tag": "index"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
   ]
 }
