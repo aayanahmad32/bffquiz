@@ -1,8 +1,6 @@
 const CACHE_NAME = 'bff-quiz-v1';
 const urlsToCache = [
   '/',
-  '/about',
-  '/random',
   '/manifest.json',
   'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'
 ];
@@ -10,9 +8,7 @@ const urlsToCache = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => {
-        return cache.addAll(urlsToCache);
-      })
+      .then(cache => cache.addAll(urlsToCache))
   );
 });
 

@@ -25,6 +25,9 @@
   <!-- Google Verification -->
   <meta name="google-site-verification" content="-pmnIIJRNoqHYPsVK-xIEiHRuNVIQd6HjsSIiR7pmLc" />
   
+  <!-- Sitemap Reference -->
+  <link rel="sitemap" type="application/xml" href="https://bffquiz-five.vercel.app/sitemap.xml" />
+  
   <!-- Open Graph / Facebook / WhatsApp Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bffquiz-five.vercel.app/">
@@ -738,7 +741,7 @@
   <input type="text" id="userName" placeholder="Apna Naam Yahan Likhein" aria-label="Enter your name" />
   <div class="main-actions">
       <button class="main-action-btn" onclick="showCreate()" aria-label="Create a new quiz">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10 10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4v2z"></path></svg>
           <div><span>Create Quiz</span><small>Start a new challenge</small></div>
       </button>
       <button class="main-action-btn" onclick="showCreatorHistory()" aria-label="View created quizzes">
@@ -998,6 +1001,7 @@
         'height' : 250,
         'width' : 300,
         'touch-icon' : 'true',
+        'app-id" : 'true',
         'params' : {}
       };
     </script>
@@ -1076,7 +1080,7 @@
     </p>
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
       </svg>
       <a href="https://github.com/looplabstech" target="_blank">github.com/looplabstech</a>
     </p>
@@ -1299,11 +1303,11 @@ const allQuestions = [
     { q: "What is my nickname?", o: ["Sonu", "Raju", "Pappu", "I don't have one"], a: "Raju" },
     { q: "What's my middle name?", o: ["Kumar", "Singh", "Don't have one", "It's a secret"], a: "Kumar" },
     { q: "What am I most likely to be arrested for?", o: ["Speeding", "Arguing with police", "Hacking", "I'm a good citizen"], a: "Arguing with police" },
-    { q: "What's the one word my friends use to describe me?", o: ["Funny", "Smart", "Loyal", "Crazy"], a: "Funny" },
+    { q: "What's the one word my friends use to describe me?", o: ["Funny", "Smart", "Loyal", "Crazy", "Crazy"], a: "Funny" },
     { q: "What is my biggest insecurity?", o: ["My looks", "My career", "My future", "I'm very secure"], a: "My future" },
     { q: "If I needed help, what would I ask for?", o: ["Money", "Advice", "A ride", "Emotional support"], a: "Emotional support" },
     { q: "What's my go-to excuse for being late?", o: ["Traffic", "Woke up late", "Feeling unwell", "I'm never late"], a: "Traffic" },
-    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔"], a: "😂" },
+    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔�"], a: "😂" },
     { q: "What do I value most in a friendship?", o: ["Honesty", "Loyalty", "Fun", "Support"], a: "Loyalty" },
     { q: "What's a secret I've never told anyone?", o: ["My first crush", "An embarrassing moment", "A hidden talent", "Nice try!"], a: "Nice try!" },
     { q: "What gift would I love the most?", o: ["Gadget", "A surprise trip", "Handmade gift", "Clothes"], a: "A surprise trip" },
@@ -1325,8 +1329,8 @@ const allQuestions = [
     { q: "If I had to eat one food for the rest of my life, what would it be?", o: ["Dal Chawal", "Pizza", "Chicken Curry", "Noodles"], a: "Dal Chawal" },
     { q: "If I could be famous for one thing, what would it be?", o: ["Being an actor", "Being a scientist", "Being a humanitarian", "Being a sports star"], a: "Being a scientist" },
     { q: "If I get a day off, I would prefer to:", o: ["Sleep all day", "Go on a long drive", "Binge-watch shows", "Hang out with friends"], a: "Binge-watch shows" },
-    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" }
-];
+    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour", "Sour"], a: "Spicy" }
+  ];
 
 // Random Quiz Questions
 const randomQuizQuestions = [
@@ -1593,7 +1597,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1717,7 +1721,7 @@ function displayShareableLink(url) {
         <button class="btn-purple social-btn-stacked" onclick="copyToClipboard(document.getElementById('shareLink').textContent)">Copy Quiz Link</button>
         <a href="https://api.whatsapp.com/send?text=${encodedShareMessage}" target="_blank" class="btn-purple social-btn-stacked">WhatsApp</a>
         <a href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Telegram</a>
-        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
         <button onclick="shareOnInstagram()" class="btn-purple social-btn-stacked">Instagram</button>
         <a href="https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Twitter</a>
         <a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>
@@ -1799,7 +1803,7 @@ function startQuiz() {
 function loadQuestion() {
     if (currentQuestionIndex >= currentQuizData.questions.length) { finishQuiz(); return; }
     const q = currentQuizData.questions[currentQuestionIndex];
-    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div>`;
+    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div></div>`;
     document.getElementById('inQuizAd').classList.remove('hidden'); // Show ad with question
 }
 function submitAnswer() {
