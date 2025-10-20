@@ -1080,7 +1080,7 @@
     </p>
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
       </svg>
       <a href="https://github.com/looplabstech" target="_blank">github.com/looplabstech</a>
     </p>
@@ -1307,7 +1307,7 @@ const allQuestions = [
     { q: "What is my biggest insecurity?", o: ["My looks", "My career", "My future", "I'm very secure"], a: "My future" },
     { q: "If I needed help, what would I ask for?", o: ["Money", "Advice", "A ride", "Emotional support"], a: "Emotional support" },
     { q: "What's my go-to excuse for being late?", o: ["Traffic", "Woke up late", "Feeling unwell", "I'm never late"], a: "Traffic" },
-    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔�"], a: "😂" },
+    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔"], a: "😂" },
     { q: "What do I value most in a friendship?", o: ["Honesty", "Loyalty", "Fun", "Support"], a: "Loyalty" },
     { q: "What's a secret I've never told anyone?", o: ["My first crush", "An embarrassing moment", "A hidden talent", "Nice try!"], a: "Nice try!" },
     { q: "What gift would I love the most?", o: ["Gadget", "A surprise trip", "Handmade gift", "Clothes"], a: "A surprise trip" },
@@ -1329,7 +1329,7 @@ const allQuestions = [
     { q: "If I had to eat one food for the rest of my life, what would it be?", o: ["Dal Chawal", "Pizza", "Chicken Curry", "Noodles"], a: "Dal Chawal" },
     { q: "If I could be famous for one thing, what would it be?", o: ["Being an actor", "Being a scientist", "Being a humanitarian", "Being a sports star"], a: "Being a scientist" },
     { q: "If I get a day off, I would prefer to:", o: ["Sleep all day", "Go on a long drive", "Binge-watch shows", "Hang out with friends"], a: "Binge-watch shows" },
-    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour", "Sour"], a: "Spicy" }
+    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" }
   ];
 
 // Random Quiz Questions
@@ -1597,7 +1597,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
