@@ -741,15 +741,15 @@
   <input type="text" id="userName" placeholder="Apna Naam Yahan Likhein" aria-label="Enter your name" />
   <div class="main-actions">
       <button class="main-action-btn" onclick="showCreate()" aria-label="Create a new quiz">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4v2z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4v2z"></path></svg>
           <div><span>Create Quiz</span><small>Start a new challenge</small></div>
       </button>
       <button class="main-action-btn" onclick="showCreatorHistory()" aria-label="View created quizzes">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2z"></path></svg>
           <div><span>My Created</span><small>Check your quiz stats</small></div>
       </button>
       <button class="main-action-btn full-width" onclick="showPlayerHistory()" aria-label="View your scores">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-4h2v4zm4 0h-2v-7h-2v7zm4 0h-2V7h-2v7zm4 0h-2V7h-2v7z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-4h2v4zm4 0h-2V7h-2v7zm4 0h-2V7h-2v7zm4 0h-2V7h-2v7z"></path></svg>
           <div><span>My Scores</span><small>Check your past results</small></div>
       </button>
   </div>
@@ -1080,7 +1080,7 @@
     </p>
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
       </svg>
       <a href="https://github.com/looplabstech" target="_blank">github.com/looplabstech</a>
     </p>
@@ -1307,7 +1307,7 @@ const allQuestions = [
     { q: "What is my biggest insecurity?", o: ["My looks", "My career", "My future", "I'm very secure"], a: "My future" },
     { q: "If I needed help, what would I ask for?", o: ["Money", "Advice", "A ride", "Emotional support"], a: "Emotional support" },
     { q: "What's my go-to excuse for being late?", o: ["Traffic", "Woke up late", "Feeling unwell", "I'm never late"], a: "Traffic" },
-    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔"], a: "😂" },
+    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔�"], a: "😂" },
     { q: "What do I value most in a friendship?", o: ["Honesty", "Loyalty", "Fun", "Support"], a: "Loyalty" },
     { q: "What's a secret I've never told anyone?", o: ["My first crush", "An embarrassing moment", "A hidden talent", "Nice try!"], a: "Nice try!" },
     { q: "What gift would I love the most?", o: ["Gadget", "A surprise trip", "Handmade gift", "Clothes"], a: "A surprise trip" },
@@ -1354,15 +1354,46 @@ const randomQuizQuestions = [
     },
     {
         q: "What's the ideal length of a friendship?",
-        o: ["A few months", "A few years", "Many years", "Lifelong"],
-        a: "Lifelong",
-        e: "While not all friendships last forever, the goal is often to build connections that can withstand the test of time and life changes."
+        o: ["A few months", "A few years", "Many years", "Lif (typeof window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ === 'undefined') {
+      window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ = {
+        theme: 'dark',
+        accent: '#ff6bcb',
+        accent-secondary: '#ff9a00',
+        accent-tertiary: '#00d9ff'
+      };
+    }
+    }
+    
+    // Random Quiz Questions
+const randomQuizQuestions = [
+    {
+        q: "What's the most important quality in a friendship?",
+        o: ["Honesty", "Loyalty", "Trust", "Communication"],
+        a: "Trust",
+        e: "Trust forms the foundation of any strong friendship. Without trust, it's difficult to be vulnerable and open with your friends."
     },
     {
-        q: "How many close friends does the average person have?",
-        o: ["1-2", "3-5", "6-10", "More than 10"],
-        a: "3-5",
-        e: "Research suggests that most people maintain about 3-5 close friendships throughout their adult lives. Quality is more important than quantity!"
+        q: "How often should friends check in on each other?",
+        o: ["Daily", "Weekly", "Monthly", "Whenever we feel like it"],
+        a: "Weekly",
+        e: "Weekly check-ins strike a good balance between staying connected and giving each other space. Of course, this can vary based on the friendship!"
+    },
+    {
+        q: "What's the best way to resolve a conflict with a friend?",
+        o: ["Talk it out openly", "Give each other space", "Get a mutual friend to mediate", "Ignore it and hope it goes away"],
+        a: "Talk it out openly",
+        e: "Open communication is key to resolving conflicts. Addressing issues directly and honestly helps prevent misunderstandings from growing."
+    },
+    {
+        q: "What's the ideal length of a friendship?",
+        o: ["A few months", "A few years", "Many years", "Lif (typeof window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ === 'undefined') {
+      window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ = {
+        theme: 'dark',
+        accent: '#ff6bcb',
+        accent-secondary: '#ff9a00',
+        accent-tertiary: '#00d9ff'
+      };
+    }
     }
 ];
 
@@ -1597,7 +1628,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1721,7 +1752,7 @@ function displayShareableLink(url) {
         <button class="btn-purple social-btn-stacked" onclick="copyToClipboard(document.getElementById('shareLink').textContent)">Copy Quiz Link</button>
         <a href="https://api.whatsapp.com/send?text=${encodedShareMessage}" target="_blank" class="btn-purple social-btn-stacked">WhatsApp</a>
         <a href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Telegram</a>
-        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
         <button onclick="shareOnInstagram()" class="btn-purple social-btn-stacked">Instagram</button>
         <a href="https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Twitter</a>
         <a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>
@@ -1803,7 +1834,7 @@ function startQuiz() {
 function loadQuestion() {
     if (currentQuestionIndex >= currentQuizData.questions.length) { finishQuiz(); return; }
     const q = currentQuizData.questions[currentQuestionIndex];
-    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div></div>`;
+    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div></div></div>`;
     document.getElementById('inQuizAd').classList.remove('hidden'); // Show ad with question
 }
 function submitAnswer() {
