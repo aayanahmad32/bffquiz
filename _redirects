@@ -1,22 +1,5 @@
 # Handle all routes for SPA
 /* /index.html 200
 
-# SEO redirects
-/about.html /about 301
-/random.html /random 301
-/quiz.html / 301
-/create.html / 301
-/play.html / 301
-/result.html / 301
-
-# Legacy quiz links redirect
-/play?id=* /index.html 200
-
-# Short link redirects
-/q/* /index.html 200
-
 # Force HTTPS
 http://* https://*:splat 301
-
-# Remove trailing slashes
-/*/ /:splat 301

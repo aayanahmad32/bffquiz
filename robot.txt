@@ -1,6 +1,3 @@
-# Robots.txt for BFF Quiz
-# https://bffquiz-five.vercel.app/
-
 User-agent: *
 Allow: /
 Allow: /about
@@ -9,47 +6,4 @@ Allow: /manifest.json
 Allow: /sitemap.xml
 Allow: /robots.txt
 
-# Disallow admin and private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*?*
-Disallow: /#dummy
-Disallow: /#hidden
-
-# Allow specific bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# Block unwanted bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-# Sitemap location
 Sitemap: https://bffquiz-five.vercel.app/sitemap.xml
-
-# Host directive (for Yandex)
-Host: https://bffquiz-five.vercel.app
