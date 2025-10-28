@@ -1,15 +1,2 @@
-# SPA routing - all routes to index.html
-/* /index.html 200
-
-# Force HTTPS
-http://* https://*:splat 301
-
-# Remove trailing slashes
-/*/ /:splat 301
-
-# Legacy redirects
-/about.html /about 301
-/random.html /random 301
-/create.html / 301
-/play.html / 301
-/result.html / 301
+# यहाँ रीडायरेक्ट नियम लिखें (उदाहरण)
+# /old-page /new-page 301
