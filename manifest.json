@@ -1,19 +1,96 @@
 {
   "name": "BFF Quiz - Friendship Challenge",
   "short_name": "BFF Quiz",
-  "description": "Create and share friendship quizzes with your friends",
+  "description": "Create and share friendship quizzes with your friends. Test how well they know you!",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f23",
   "theme_color": "#bb86fc",
   "orientation": "portrait-primary",
   "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["entertainment", "games", "social", "education"],
   "icons": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
     {
       "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%230f0f23'/%3E%3Ctext y='50%' text-anchor='middle' dy='.3em' font-size='96' fill='%23ff6bcb'%3E🔥%3C/text%3E%3C/svg%3E",
       "sizes": "192x192",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%230f0f23'/%3E%3Ctext y='50%' text-anchor='middle' dy='.3em' font-size='256' fill='%23ff6bcb'%3E🔥%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Create Quiz",
+      "short_name": "Create",
+      "description": "Create a new friendship quiz",
+      "url": "/#create",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23ff6bcb' rx='24'/%3E%3Ctext y='50%' text-anchor='middle' dy='.3em' font-size='96' fill='white'%3E➕%3C/text%3E%3C/svg%3E",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Random Quiz",
+      "short_name": "Random",
+      "description": "Try a random friendship question",
+      "url": "/random",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%23ff9a00' rx='24'/%3E%3Ctext y='50%' text-anchor='middle' dy='.3em' font-size='96' fill='white'%3E🎲%3C/text%3E%3C/svg%3E",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Scores",
+      "short_name": "Scores",
+      "description": "View your quiz scores",
+      "url": "/#player-history",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%2300d9ff' rx='24'/%3E%3Ctext y='50%' text-anchor='middle' dy='.3em' font-size='96' fill='white'%3E🏆%3C/text%3E%3C/svg%3E",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCoFt9k93c-M7Ie7ChvzCGRwBbYgZSDXOMQSL7a4XlX3fTU23SNVURs8Ws24bwaxdX8FggWULAjxaxPh_MkMAeJ4hIO_KY3gwHcreeD7KjNjRvOOSFRpXmOqfnQk-oqHsS1ka87LNRhbpwvUweUMtalcQ8ci9s8Xl-E3nUYqEd-jnMcQ4kVcmB-oRgAdE0/s1632/IMG_20251005_222112.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "BFF Quiz main interface"
+    },
+    {
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCoFt9k93c-M7Ie7ChvzCGRwBbYgZSDXOMQSL7a4XlX3fTU23SNVURs8Ws24bwaxdX8FggWULAjxaxPh_MkMAeJ4hIO_KY3gwHcreeD7KjNjRvOOSFRpXmOqfnQk-oqHsS1ka87LNRhbpwvUweUMtalcQ8ci9s8Xl-E3nUYqEd-jnMcQ4kVcmB-oRgAdE0/s1632/IMG_20251005_222112.jpg",
+      "sizes": "640x1136",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "BFF Quiz mobile view"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
 }
