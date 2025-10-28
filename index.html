@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <!-- Favicon - FIXED -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔥%3C/text%3E%3C/svg%3E">
+  <link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg">
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg">
   
   <!-- PWA Meta Tags -->
   <meta name="theme-color" content="#bb86fc">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg">
-
+  <link rel="manifest" href="/manifest.json">
+  
   <!-- Core SEO Tags -->
   <title>BFF Quiz - Create Friendship Quiz & Challenge Friends</title>
-  <meta name="description" content="🔥 Create and share your own friendship quiz! See how well your friends know you with 100+ fun questions. Challenge them now, check the leaderboard, and prove your friendship!">
+  <meta name="description" content="🔥 Create and share your own friendship quiz! See how well your friends know you with 150+ fun questions. Challenge them now, check the leaderboard, and prove your friendship!">
   <meta name="keywords" content="friendship quiz, bff quiz, quiz game, challenge friends, test friendship, fun questions, social quiz, quiz maker">
   <meta name="author" content="LoopLabs">
   <meta name="robots" content="index, follow">
@@ -28,7 +29,7 @@
   <!-- Sitemap Reference -->
   <link rel="sitemap" type="application/xml" href="https://bffquiz-five.vercel.app/sitemap.xml" />
   
-  <!-- Open Graph / Facebook / WhatsApp Meta Tags -->
+  <!-- Open Graph / Facebook / WhatsApp Meta Tags - FIXED -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bffquiz-five.vercel.app/">
   <meta property="og:title" content="Friendship Challenge! 🔥 BFF Quiz">
@@ -37,10 +38,11 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="BFF Quiz - Create and share friendship quizzes with friends">
   <meta property="og:site_name" content="BFF Quiz">
   <meta property="og:locale" content="en_US">
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter Card Meta Tags - FIXED -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://bffquiz-five.vercel.app/">
   <meta property="twitter:title" content="Friendship Challenge! 🔥 BFF Quiz">
@@ -58,12 +60,13 @@
 
   <!-- Preload Critical Resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
-  <link rel="preload" href="manifest.json" as="fetch" crossorigin>
+  <link rel="preload" href="/manifest.json" as="fetch" crossorigin>
+  <link rel="preload" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" as="image">
   
   <!-- DNS Prefetch for External Resources -->
   <link rel="dns-prefetch" href="//jsonblob.com">
-  <link rel="dns-prefetch" href="//www.highperformanceformat.com">
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.highperformanceformat.com">
   
   <!-- Structured Data (Schema Markup) for Rich Snippets -->
   <script type="application/ld+json">
@@ -151,19 +154,16 @@
       --tertiary-accent: #00d9ff;
       --text-color: white;
       --dark-text: #0f0f23;
-      --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     }
     * { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
     body { 
       background: var(--primary-bg); 
       color: var(--text-color); 
       margin: 0;
-      background-image: 
-        radial-gradient(circle at 10% 20%, rgba(255, 107, 203, 0.1) 0%, transparent 20%),
-        radial-gradient(circle at 80% 80%, rgba(0, 217, 255, 0.1) 0%, transparent 20%),
-        radial-gradient(circle at 40% 40%, rgba(255, 154, 0, 0.1) 0%, transparent 20%);
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .container { 
       max-width: 600px; 
@@ -174,13 +174,15 @@
       box-shadow: 0 10px 30px rgba(255, 107, 203, 0.2); 
       position: relative;
       overflow: hidden;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     h1, h2, h3 { 
       text-align: center; 
       color: var(--primary-accent); 
       margin-top: 0; 
       margin-bottom: 20px;
-      text-shadow: 0 0 10px rgba(255, 107, 203, 0.5);
     }
     input[type="text"], select, textarea { 
       width: 100%; 
@@ -191,7 +193,6 @@
       background: var(--card-bg); 
       color: var(--text-color); 
       font-size: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     button, .social-btn-stacked { 
       padding: 12px; 
@@ -200,21 +201,15 @@
       cursor: pointer; 
       font-weight: bold; 
       font-size: 1rem; 
-      transition: all 0.3s ease; 
       color: var(--text-color); 
       width: 100%; 
       margin: 0; 
       text-align: center; 
       text-decoration: none; 
       display: block;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .btn-purple { 
       background: linear-gradient(to right, var(--primary-accent), var(--secondary-accent)); 
-    }
-    button:hover, .social-btn-stacked:hover { 
-      transform: translateY(-2px); 
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
     }
     .main-actions { 
       display: grid; 
@@ -243,7 +238,6 @@
       border: 1px solid var(--border-color); 
       border-radius: 12px; 
       background: var(--card-bg);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .hidden { display: none !important; }
     .question-title { font-weight: bold; margin-bottom: 15px; font-size: 1.1rem; }
@@ -254,41 +248,66 @@
       background: var(--border-color); 
       border-radius: 8px; 
       margin-bottom: 10px;
-      transition: all 0.2s ease;
-    }
-    .option-item:hover {
-      background: rgba(255, 107, 203, 0.2);
     }
     .option-item input[type="radio"] { margin-right: 15px; flex-shrink: 0; }
     .option-item input[type="text"] { flex-grow: 1; margin: 0; }
     .correct-tick { color: #4caf50; font-weight: bold; margin-left: 10px; font-size: 1.2rem; }
-    .ad-space { 
-      height: auto; 
-      min-height: 250px; 
+    .question-count-selector { display: flex; justify-content: space-around; gap: 10px; margin-bottom: 20px; }
+    .count-btn { width: 100%; margin: 0; }
+    .active-count { background: var(--primary-accent); color: var(--dark-text); }
+    #socialShareButtons { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
+    /* MODAL STYLES - FIXED */
+    #questionModal { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
       width: 100%; 
-      max-width: 300px; 
-      background: var(--card-bg); 
-      margin: 20px auto; 
+      height: 100%; 
+      background: rgba(0,0,0,0.85); 
       display: flex; 
       align-items: center; 
       justify-content: center; 
-      border-radius: 8px; 
-      border: 1px solid var(--border-color);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 10000; 
+      padding: 15px; 
+      overflow-y: auto; 
     }
-    .question-count-selector { display: flex; justify-content: space-around; gap: 10px; margin-bottom: 20px; }
-    .count-btn { width: 100%; margin: 0; }
-    .active-count { background: var(--primary-accent); color: var(--dark-text); box-shadow: 0 0 10px var(--primary-accent); }
-    .alert-box { padding: 15px; background-color: #f44336; color: white; margin-bottom: 15px; border-radius: 8px; text-align: center; }
-    #socialShareButtons { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
-    /* MODAL STYLES */
-    #questionModal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 15px; }
-    .modal-content { background: var(--secondary-bg); padding: 20px; border-radius: 12px; width: 100%; max-width: 550px; display: flex; flex-direction: column; max-height: 90vh; }
-    .modal-body { overflow-y: auto; margin-bottom: 15px; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 10px 0; }
-    .modal-question-item { display: flex; align-items: center; padding: 10px; margin: 5px 0; border-radius: 8px; cursor: pointer; }
+    .modal-content { 
+      background: var(--secondary-bg); 
+      padding: 20px; 
+      border-radius: 12px; 
+      width: 100%; 
+      max-width: 550px; 
+      display: flex; 
+      flex-direction: column; 
+      max-height: 90vh; 
+      box-shadow: 0 20px 60px rgba(255, 107, 203, 0.4); 
+      border: 1px solid var(--border-color);
+    }
+    .modal-body { 
+      overflow-y: auto; 
+      margin-bottom: 15px; 
+      border-top: 1px solid var(--border-color); 
+      border-bottom: 1px solid var(--border-color); 
+      padding: 15px 0; 
+      max-height: 60vh; 
+    }
+    .modal-question-item { 
+      display: flex; 
+      align-items: center; 
+      padding: 10px; 
+      margin: 5px 0; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+    }
     .modal-question-item:hover { background: var(--border-color); }
     .modal-question-item input[type="checkbox"] { margin-right: 15px; width: 20px; height: 20px; flex-shrink: 0; }
-    .modal-footer { display: flex; gap: 10px; }
+    .modal-footer { 
+      display: grid; 
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px; 
+    }
     /* BUTTON & LAYOUT FIXES */
     #creationControls { display: flex; gap: 15px; margin-top: 20px; }
     #creationControls button { flex: 1; margin: 0; }
@@ -296,15 +315,21 @@
     .quiz-history-item:hover { background: var(--border-color); }
     #leaderboard { margin-top: 25px; }
     .leaderboard-item { padding:12px; margin-bottom: 8px; background: var(--card-bg); border-radius: 8px; }
-    /* FOOTER CREDIT STYLES */
+    /* FOOTER CREDIT STYLES - FIXED */
     .footer-credit {
       text-align: center;
-      margin-top: 30px;
-      padding-top: 20px;
+      margin-top: auto;
+      padding: 20px;
       border-top: 1px solid var(--border-color);
       font-size: 1.1rem;
       font-weight: bold;
       color: #ccc;
+      width: 100%;
+      background: var(--secondary-bg);
+      border-radius: 0 0 16px 16px;
+      position: relative;
+      z-index: 10;
+      flex-shrink: 0;
     }
     .footer-links {
       display: flex;
@@ -317,15 +342,35 @@
       color: var(--primary-accent);
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s ease;
     }
-    .footer-links a:hover {
-      color: var(--secondary-accent);
+    /* AD SPACE STYLES - SIMPLIFIED */
+    .ad-space { 
+      height: auto; 
+      min-height: 250px; 
+      width: 100%; 
+      max-width: 300px; 
+      background: var(--card-bg); 
+      margin: 20px auto; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 8px; 
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      position: relative;
+      clear: both;
     }
-    /* HEADER AD BANNER */
+
+    .ad-space-horizontal {
+      min-height: 60px;
+      max-width: 468px;
+      margin: 15px auto;
+    }
+
     .header-ad {
       width: 100%;
       height: 90px;
+      max-height: 90px;
       background: var(--card-bg);
       border-radius: 8px;
       margin-bottom: 20px;
@@ -333,6 +378,25 @@
       align-items: center;
       justify-content: center;
       border: 1px solid var(--border-color);
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .header-ad iframe {
+      max-height: 60px !important;
+    }
+
+    /* Fix for mobile responsiveness */
+    @media (max-width: 768px) {
+      .ad-space-horizontal {
+        max-width: 100%;
+        min-height: 60px;
+      }
+      
+      .header-ad {
+        height: auto;
+        min-height: 60px;
+      }
     }
     /* LOGO STYLES */
     .logo-container {
@@ -345,9 +409,35 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid var(--primary-accent);
-      box-shadow: 0 0 15px rgba(255, 107, 203, 0.5);
     }
-    /* INSTAGRAM BUTTON */
+    /* Mobile optimization */
+    @media (max-width: 480px) {
+      .logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    /* High DPI displays */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+    }
+
+    /* WebP support fallback */
+    .no-webp .logo {
+      /* Fallback styles for browsers without WebP */
+    }
+    /* INSTAGRAM BUTTON - FIXED POSITION */
     .instagram-btn {
       position: fixed;
       bottom: 20px;
@@ -363,15 +453,10 @@
       gap: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
       z-index: 999;
-      transition: all 0.3s ease;
       padding: 0 15px;
       text-decoration: none;
       color: white;
       font-weight: bold;
-    }
-    .instagram-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
     }
     .instagram-btn-text {
       display: flex;
@@ -494,20 +579,6 @@
       font-size: 14px;
       line-height: 1.4;
     }
-    /* Loading Animation */
-    .loader {
-      border: 4px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      border-top: 4px solid var(--primary-accent);
-      width: 20px;
-      height: 20px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
     /* NOTIFICATION STYLES */
     .notification {
       position: fixed;
@@ -521,7 +592,6 @@
       max-width: 300px;
       z-index: 1001;
       transform: translateX(120%);
-      transition: transform 0.3s ease;
     }
     .notification.show {
       transform: translateX(0);
@@ -602,7 +672,6 @@
       margin: 20px 0;
       width: 100%;
       max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     #aboutPage .contact-info h3 {
       margin-top: 0;
@@ -619,10 +688,6 @@
       color: var(--primary-accent);
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    #aboutPage .contact-info a:hover {
-      color: var(--secondary-accent);
     }
     /* RANDOM QUIZ STYLES */
     #randomQuizPage {
@@ -643,6 +708,7 @@
     }
     #randomQuizPage .btn-purple {
       max-width: 300px;
+      margin-bottom: 10px;
     }
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -683,17 +749,155 @@
       white-space: nowrap;
       border: 0;
     }
-    /* Smooth Scrolling */
-    html {
-      scroll-behavior: smooth;
+    /* Edit Note Style - FIXED */
+    .edit-note {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 12px 15px;
+      background: linear-gradient(135deg, rgba(255, 107, 203, 0.15), rgba(255, 154, 0, 0.15));
+      border-radius: 8px;
+      border-left: 4px solid var(--primary-accent);
+      border-right: 4px solid var(--secondary-accent);
+      box-shadow: 0 2px 8px rgba(255, 107, 203, 0.2);
     }
-    /* Performance Optimizations */
-    .lazy-load {
-      opacity: 0;
-      transition: opacity 0.3s;
+    /* Option Grid Style */
+    .option-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin: 15px 0;
     }
-    .lazy-load.loaded {
-      opacity: 1;
+    /* Question Item Style for Modal */
+    .question-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+    }
+    .question-item:hover {
+      background: var(--border-color);
+    }
+    .question-item input[type="checkbox"] {
+      margin-right: 15px;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .question-item-text {
+      flex-grow: 1;
+    }
+    /* Shuffle Button Style */
+    .shuffle-btn {
+      background: linear-gradient(135deg, var(--secondary-accent), var(--primary-accent));
+      margin-bottom: 10px;
+    }
+    /* Equal size buttons for modal footer - FIXED */
+    .modal-footer button {
+      min-height: 50px;
+      max-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      font-size: 1rem;
+    }
+    
+    /* Mobile fix for modal */
+    @media (max-width: 768px) {
+      .modal-content {
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+        height: 100%;
+        max-height: 100%;
+      }
+      
+      .modal-body {
+        max-height: 70vh;
+      }
+    }
+    
+    /* FOMO Features Styles */
+    .fomo-badge {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      background: linear-gradient(135deg, #ff6bcb, #ff9a00);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 12px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(255, 107, 203, 0.4);
+      animation: pulse 2s infinite;
+    }
+    
+    .activity-ticker {
+      position: fixed;
+      bottom: 100px;
+      left: 20px;
+      background: rgba(26, 26, 62, 0.95);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 13px;
+      max-width: 250px;
+      z-index: 1000;
+      border-left: 3px solid #ff6bcb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      animation: slideInLeft 0.5s ease-out;
+    }
+    
+    .urgency-timer {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #dc2743, #cc2366);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(220, 39, 67, 0.4);
+    }
+    
+    .social-proof-popup {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: white;
+      color: #0f0f23;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 300px;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      transform: translateY(150%);
+      transition: transform 0.5s ease-out;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    
+    @keyframes slideOutLeft {
+      from { transform: translateX(0); opacity: 1; }
+      to { transform: translateX(-100%); opacity: 0; }
     }
   </style>
   
@@ -704,26 +908,39 @@
 
 <!-- Home Page (Default) -->
 <div id="home" class="container">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Create Friendship Quizzes Online"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
-  <!-- Header Ad Banner -->
-  <div class="header-ad">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : '21da5b00be19789653efc715dea56633',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/21da5b00be19789653efc715dea56633/invoke.js"></script>
+  <!-- Header Ad Banner - SIMPLIFIED -->
+  <div class="header-ad" id="headerAd">
+    <!-- Ad will be loaded by JavaScript -->
   </div>
   
-  <h1>BFF Quiz</h1>
+  <!-- Second Header Ad Banner -->
+  <div class="header-ad" id="headerAd2">
+    <!-- Ad will be loaded by JavaScript -->
+  </div>
+  
+  <h1>Create Your Own BFF Friendship Quiz Online - Free Quiz Maker</h1>
   <p style="text-align:center;">Create a friendship quiz & challenge your friends!</p>
   
   <!-- Rating Section -->
@@ -753,19 +970,10 @@
           <div><span>My Scores</span><small>Check your past results</small></div>
       </button>
   </div>
-  <!-- Ad Space (Top) -->
-  <div class="ad-space">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'touch-icon' : 'true',
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+  
+  <!-- Ad Space (Top) - SIMPLIFIED -->
+  <div class="ad-space" id="topAd">
+    <!-- Ad will be loaded by JavaScript -->
   </div>
   
   <!-- User Reviews Section - Moved Above Footer -->
@@ -803,22 +1011,39 @@
   
   <!-- Footer -->
   <div class="footer-credit">
-    <p>LoopLabs - All Rights Reserved</p>
+    <p>LoopLabs – All Rights Reserved</p>
     <div class="footer-links">
-      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
-      <a href="#" onclick="showAboutPage(); return false;">About</a>
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
     </div>
   </div>
 </div>
 
 <!-- Create Quiz Page -->
 <div id="create" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Design Your Personalized Friendship Quiz"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
-  <h2>Create Your Quiz</h2>
+  <h2>Design Your Personalized Friendship Quiz - 150+ Questions</h2>
   <div class="question-count-selector">
     <button class="count-btn btn-purple" onclick="setQuestionCount(5)" aria-label="Select 5 questions">5 Qs</button>
     <button class="count-btn btn-purple" onclick="setQuestionCount(10)" aria-label="Select 10 questions">10 Qs</button>
@@ -829,85 +1054,102 @@
   <p id="questionCounter" style="text-align: center; margin-bottom: 20px;" aria-live="polite"></p>
   <div id="questionsContainer"><p style="text-align:center; opacity: 0.7;">Your selected questions will appear here for final review.</p></div>
   <div id="creationControls" class="hidden">
-      <button class="btn-purple" onclick="shuffleSelectedQuestions()" aria-label="Shuffle questions">Shuffle Questions</button>
+      <button class="btn-purple shuffle-btn" onclick="shuffleSelectedQuestions()" aria-label="Shuffle questions">Shuffle Questions</button>
       <button class="btn-purple" onclick="finishAndShareQuiz()" aria-label="Finish and share quiz">Finish & Share Link</button>
   </div>
-  <!-- Ad Space (Middle) -->
-  <div class="ad-space">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'touch-icon' : 'true',
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+  
+  <!-- Ad Space (Middle) - SIMPLIFIED -->
+  <div class="ad-space" id="middleAd">
+    <!-- Ad will be loaded by JavaScript -->
   </div>
+  
   <!-- Footer -->
   <div class="footer-credit">
-    <p>LoopLabs - All Rights Reserved</p>
+    <p>LoopLabs – All Rights Reserved</p>
     <div class="footer-links">
-      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
-      <a href="#" onclick="showAboutPage(); return false;">About</a>
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
     </div>
   </div>
 </div>
 
 <!-- Play Quiz Page -->
 <div id="play" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Test Your Friendship"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
   <h2 id="quizTitle"></h2>
   <div id="playTakerName">
       <input type="text" id="takerName" placeholder="Apna Naam Yahan Likhein" aria-label="Enter your name" />
       <button class="btn-purple" onclick="startQuiz()" aria-label="Start quiz">Start Quiz</button>
-      <!-- Ad Slot 1: Below Start Quiz Button -->
+      
+      <!-- Ad Slot 1: Below Start Quiz Button - SIMPLIFIED -->
       <div id="startQuizAd" class="ad-space" style="margin-top:20px;">
-        <script type="text/javascript">
-          atOptions = {
-            'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-            'format' : 'iframe',
-            'height' : 250,
-            'width' : 300,
-            'touch-icon' : 'true',
-            'params' : {}
-          };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+        <!-- Ad will be loaded by JavaScript -->
       </div>
   </div>
   <div id="quizContentWrapper" class="hidden">
     <div id="quizContent">
       <!-- Questions will be dynamically loaded here -->
     </div>
-    <!-- Ad Slot 2: Below Next Question Button -->
+    
+    <!-- Ad Slot 2: Below Next Question Button - SIMPLIFIED -->
     <div id="inQuizAd" class="ad-space hidden" style="margin-top:0;">
-      <script type="text/javascript">
-        atOptions = {
-          'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'touch-icon' : 'true',
-          'params' : {}
-        };
-      </script>
-      <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+      <!-- Ad will be loaded by JavaScript -->
     </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs – All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
+  </div>
   </div>
 </div>
 
 <!-- Result & Share Page -->
 <div id="result" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Quiz Results & Leaderboard"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
   <h2 id="resultTitle"></h2>
@@ -924,36 +1166,46 @@
           <!-- Buttons will be generated by JS here -->
       </div>
   </div>
-   <!-- Ad Space (Bottom on Result Page / Under Leaderboard) -->
-   <div class="ad-space">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'touch-icon' : 'true',
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+   
+   <!-- Ad Space (Bottom on Result Page / Under Leaderboard) - SIMPLIFIED -->
+   <div class="ad-space" id="resultAd">
+    <!-- Ad will be loaded by JavaScript -->
    </div>
-  <button class="btn-purple" onclick="location.href=location.pathname" style="margin-top: 20px;" aria-label="Create your own quiz">Create Your Own Quiz</button>
+   
+  <button class="btn-purple" onclick="resetAndGoHome()" style="margin-top: 20px;" aria-label="Create your own quiz">Create Your Own Quiz</button>
+  
   <!-- Footer -->
   <div class="footer-credit">
-    <p>LoopLabs - All Rights Reserved</p>
+    <p>LoopLabs – All Rights Reserved</p>
     <div class="footer-links">
-      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
-      <a href="#" onclick="showAboutPage(); return false;">About</a>
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
     </div>
   </div>
 </div>
 
 <!-- CREATOR History Page -->
 <div id="creatorHistoryPage" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Your Created Quizzes"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
     <div id="creatorHistoryWrapper">
@@ -966,55 +1218,90 @@
         <div id="creatorLeaderboardList"></div>
         <button class="btn-purple" onclick="showCreatorHistoryList()" style="margin-top:20px;" aria-label="Back to quiz list">Back to Quiz List</button>
     </div>
-    <!-- Ad Space (Creator History) -->
-    <div class="ad-space">
-      <script type="text/javascript">
-        atOptions = {
-          'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-          'format' : 'iframe',
-          'height' : 250,
-          'width' : 300,
-          'touch-icon' : 'true',
-          'params' : {}
-        };
-      </script>
-      <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+    
+    <!-- Ad Space (Creator History) - SIMPLIFIED -->
+    <div class="ad-space" id="creatorHistoryAd">
+      <!-- Ad will be loaded by JavaScript -->
     </div>
+    
     <button class="btn-purple" onclick="showPage('home')" style="margin-top:20px;" aria-label="Back to home">Back to Home</button>
+    
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs – All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
+    </div>
+  </div>
 </div>
 
 <!-- PLAYER History Page (My Scores) -->
 <div id="playerHistoryPage" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Your Quiz Scores"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
   <h2>My Score History</h2>
   <div id="playerHistoryList"></div>
-  <!-- Ad Space (Player History) -->
-  <div class="ad-space">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : 'c0efb17d6a9b43764d3fe4e7973a31a0',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'touch-icon' : 'true',
-        'app-id" : 'true',
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/c0efb17d6a9b43764d3fe4e7973a31a0/invoke.js"></script>
+  
+  <!-- Ad Space (Player History) - SIMPLIFIED -->
+  <div class="ad-space" id="playerHistoryAd">
+    <!-- Ad will be loaded by JavaScript -->
   </div>
+  
   <button class="btn-purple" onclick="showPage('home')" style="margin-top:20px;" aria-label="Back to home">Back to Home</button>
+  
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs – All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
+    </div>
+  </div>
 </div>
 
 <!-- Random Quiz Page -->
 <div id="randomQuizPage" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - Random Friendship Questions"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
   <h1>Random Quiz</h1>
@@ -1041,19 +1328,36 @@
   
   <!-- Footer -->
   <div class="footer-credit">
-    <p>LoopLabs - All Rights Reserved</p>
+    <p>LoopLabs – All Rights Reserved</p>
     <div class="footer-links">
-      <a href="#" onclick="showPage('home'); return false;">Home</a>
-      <a href="#" onclick="showAboutPage(); return false;">About</a>
+      <a href="#home" onclick="showPage('home'); return false;">Home</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
     </div>
   </div>
 </div>
 
 <!-- About Page -->
 <div id="aboutPage" class="container hidden">
-  <!-- Logo -->
+  <!-- Logo - FIXED -->
   <div class="logo-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg" alt="BFF Quiz Logo" class="logo" loading="lazy">
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source 
+        srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        type="image/jpeg">
+      
+      <!-- Final fallback -->
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw7p4ddixu5QjJ3yDAgIvAkrzFGNk2h_KOeDn9TzsljOPRHnPyRSmDZu4VoYPOwi1lr24VikemKzvNUveFGlhB8ersbf3FSCSjYZ7YxMU7d9AuEtMqbUS3exY19hcFQ0SSSJBstOIy3yGUGwKF9i51TSlu677sZuapKQhNGOkFg2J4uF8PoRuau5_YJwRx/s1080/Picsart_25-10-05_22-20-31-071.jpg"
+        alt="BFF Quiz - About Us"
+        class="logo"
+        loading="lazy"
+        decoding="async"
+        width="120"
+        height="120"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🔥%3C/text%3E%3C/svg%3E'"
+        style="max-width: 100%; height: auto;">
+    </picture>
   </div>
   
   <h1>About BFF Quiz</h1>
@@ -1065,24 +1369,11 @@
     <h3>Contact Us</h3>
     <p>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-        <path d="m22 7-10 5L2 7"></path>
-      </svg>
-      <a href="mailto:contact@looplabs.tech">contact@looplabs.tech</a>
-    </p>
-    <p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
       </svg>
       <a href="https://www.instagram.com/looplabstech" target="_blank">@looplabstech</a>
-    </p>
-    <p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 0 0 0 19.91 1S18.73.65 19.91 1"></path>
-      </svg>
-      <a href="https://github.com/looplabstech" target="_blank">github.com/looplabstech</a>
     </p>
   </div>
   
@@ -1090,10 +1381,10 @@
   
   <!-- Footer -->
   <div class="footer-credit">
-    <p>LoopLabs - All Rights Reserved</p>
+    <p>LoopLabs – All Rights Reserved</p>
     <div class="footer-links">
-      <a href="#" onclick="showRandomQuiz(); return false;">Random Quiz</a>
-      <a href="#" onclick="showPage('home'); return false;">Home</a>
+      <a href="#random-quiz" onclick="showRandomQuiz(); return false;">Random Quiz</a>
+      <a href="#home" onclick="showPage('home'); return false;">Home</a>
     </div>
   </div>
 </div>
@@ -1105,6 +1396,14 @@
     <p>This page is not accessible from the main navigation. It's only accessible through direct links and is included in the sitemap for SEO purposes.</p>
     <button class="btn-purple" onclick="showPage('home')" aria-label="Go to home page">Go to Home Page</button>
   </div>
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs – All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#home" onclick="showPage('home'); return false;">Home</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
+    </div>
+  </div>
 </div>
 
 <!-- Hidden Page (SEO Only) -->
@@ -1115,7 +1414,7 @@
     <p>BFF Quiz is a fun and interactive way to test your friendship bonds. Create custom quizzes with our extensive question bank and challenge your friends to see who knows you best!</p>
     <p>Features include:</p>
     <ul style="text-align: left; max-width: 400px;">
-      <li>100+ pre-written questions</li>
+      <li>150+ pre-written questions</li>
       <li>Customizable quiz options</li>
       <li>Real-time leaderboards</li>
       <li>Social sharing capabilities</li>
@@ -1123,13 +1422,21 @@
     </ul>
     <button class="btn-purple" onclick="showPage('home')" aria-label="Go to home page">Go to Home Page</button>
   </div>
+  <!-- Footer -->
+  <div class="footer-credit">
+    <p>LoopLabs – All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#home" onclick="showPage('home'); return false;">Home</a>
+      <a href="#about" onclick="showAboutPage(); return false;">About</a>
+    </div>
+  </div>
 </div>
 
 <!-- SEO Page (Hidden from users, visible to search engines) -->
 <div id="seoPage" class="container hidden" style="display:none !important; visibility:hidden; position:absolute; left:-9999px; top:-9999px;">
   <div id="seoPageContent">
     <h1>BFF Quiz - The Ultimate Friendship Challenge</h1>
-    <p>Discover the most engaging way to test your friendships with BFF Quiz! Our innovative platform allows you to create personalized quizzes with over 100 carefully crafted questions that will reveal how well your friends truly know you.</p>
+    <p>Discover the most engaging way to test your friendships with BFF Quiz! Our innovative platform allows you to create personalized quizzes with over 150 carefully crafted questions that will reveal how well your friends truly know you.</p>
     
     <h2>Why Choose BFF Quiz?</h2>
     <ul>
@@ -1177,8 +1484,15 @@
     </div>
     <div class="modal-body" id="questionList"></div>
     <div class="modal-footer">
-      <button class="btn-purple" style="flex:2" onclick="addSelectedQuestions()" aria-label="Add selected questions">Add Selected Questions</button>
-      <button class="btn-purple" style="flex:1" onclick="closeQuestionModal()" aria-label="Cancel selection">Cancel</button>
+      <button class="btn-purple shuffle-btn" onclick="shuffleModalQuestions()" aria-label="Shuffle questions">
+        🔀 Shuffle
+      </button>
+      <button class="btn-purple" onclick="addSelectedQuestions()" aria-label="Add selected questions">
+        Add Selected
+      </button>
+      <button class="btn-purple" onclick="closeQuestionModal()" aria-label="Cancel selection">
+        Cancel
+      </button>
     </div>
   </div>
 </div>
@@ -1233,7 +1547,7 @@ if ('serviceWorker' in navigator) {
 </script>
 
 <script>
-// --- MASSIVE QUESTION BANK (100 Questions) ---
+// --- MASSIVE QUESTION BANK (150+ Questions) ---
 const allQuestions = [
     // Favorites
     { q: "What's my favorite food?", o: ["Pizza", "Biryani", "Pasta", "Burger"], a: "Biryani" },
@@ -1303,11 +1617,11 @@ const allQuestions = [
     { q: "What is my nickname?", o: ["Sonu", "Raju", "Pappu", "I don't have one"], a: "Raju" },
     { q: "What's my middle name?", o: ["Kumar", "Singh", "Don't have one", "It's a secret"], a: "Kumar" },
     { q: "What am I most likely to be arrested for?", o: ["Speeding", "Arguing with police", "Hacking", "I'm a good citizen"], a: "Arguing with police" },
-    { q: "What's the one word my friends use to describe me?", o: ["Funny", "Smart", "Loyal", "Crazy", "Crazy"], a: "Funny" },
+    { q: "What's the one word my friends use to describe me?", o: ["Funny", "Smart", "Loyal", "Crazy"], a: "Funny" },
     { q: "What is my biggest insecurity?", o: ["My looks", "My career", "My future", "I'm very secure"], a: "My future" },
     { q: "If I needed help, what would I ask for?", o: ["Money", "Advice", "A ride", "Emotional support"], a: "Emotional support" },
     { q: "What's my go-to excuse for being late?", o: ["Traffic", "Woke up late", "Feeling unwell", "I'm never late"], a: "Traffic" },
-    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔�"], a: "😂" },
+    { q: "What's my most used emoji?", o: ["😂", "❤️", "👍", "🤔"], a: "😂" },
     { q: "What do I value most in a friendship?", o: ["Honesty", "Loyalty", "Fun", "Support"], a: "Loyalty" },
     { q: "What's a secret I've never told anyone?", o: ["My first crush", "An embarrassing moment", "A hidden talent", "Nice try!"], a: "Nice try!" },
     { q: "What gift would I love the most?", o: ["Gadget", "A surprise trip", "Handmade gift", "Clothes"], a: "A surprise trip" },
@@ -1329,7 +1643,84 @@ const allQuestions = [
     { q: "If I had to eat one food for the rest of my life, what would it be?", o: ["Dal Chawal", "Pizza", "Chicken Curry", "Noodles"], a: "Dal Chawal" },
     { q: "If I could be famous for one thing, what would it be?", o: ["Being an actor", "Being a scientist", "Being a humanitarian", "Being a sports star"], a: "Being a scientist" },
     { q: "If I get a day off, I would prefer to:", o: ["Sleep all day", "Go on a long drive", "Binge-watch shows", "Hang out with friends"], a: "Binge-watch shows" },
-    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" }
+    { q: "If I were a flavour, what would I be?", o: ["Sweet", "Spicy", "Salty", "Sour"], a: "Spicy" },
+    // NEW QUESTIONS - Tech & Social Media
+    { q: "Which social media platform do I use most?", o: ["Instagram", "Facebook", "Twitter", "WhatsApp"], a: "Instagram" },
+    { q: "What's my phone's wallpaper?", o: ["Nature", "Family/Friends", "Abstract", "Default"], a: "Family/Friends" },
+    { q: "How many hours do I spend on my phone daily?", o: ["Less than 2 hours", "2-4 hours", "4-6 hours", "More than 6 hours"], a: "4-6 hours" },
+    { q: "Which app do I check first thing in the morning?", o: ["WhatsApp", "Instagram", "Email", "News app"], a: "WhatsApp" },
+    { q: "What's my favorite emoji to use?", o: ["😂", "❤️", "🔥", "😎"], a: "😂" },
+    { q: "Do I prefer iOS or Android notifications?", o: ["iOS", "Android", "Don't care", "Turn off all notifications"], a: "Android" },
+    { q: "What's my favorite tech gadget?", o: ["Smartphone", "Laptop", "Smartwatch", "Headphones"], a: "Smartphone" },
+    { q: "How often do I post on social media?", o: ["Daily", "Weekly", "Rarely", "Never"], a: "Weekly" },
+    { q: "What's my stance on taking photos of food?", o: ["Always do it", "Sometimes", "Rarely", "Never"], a: "Sometimes" },
+    { q: "Which streaming service do I use most?", o: ["Netflix", "Amazon Prime", "Disney+", "YouTube"], a: "Netflix" },
+    // NEW QUESTIONS - Pop Culture & Entertainment
+    { q: "What's my favorite TV show currently?", o: ["Friends", "The Office", "Breaking Bad", "Stranger Things"], a: "Stranger Things" },
+    { q: "Which movie could I watch over and over?", o: ["3 Idiots", "Dil Chahta Hai", "Inception", "The Avengers"], a: "3 Idiots" },
+    { q: "Who's my favorite music artist?", o: ["A.R. Rahman", "Arijit Singh", "Badshah", "Neha Kakkar"], a: "Arijit Singh" },
+    { q: "What's my go-to karaoke song?", o: ["Tum Hi Ho", "Lungi Dance", "Chaiyya Chaiyya", "Senorita"], a: "Tum Hi Ho" },
+    { q: "Which concert would I love to attend?", o: ["Coldplay", "AR Rahman", "BTS", "Ed Sheeran"], a: "AR Rahman" },
+    { q: "What's my favorite cartoon/anime?", o: ["Doraemon", "Naruto", "Tom & Jerry", "Dragon Ball Z"], a: "Naruto" },
+    { q: "Which web series am I binge-watching?", o: ["Mirzapur", "Sacred Games", "Money Heist", "The Crown"], a: "Money Heist" },
+    { q: "What's my favorite meme format?", o: ["Distracted Boyfriend", "Woman Yelling at Cat", "Drake Hotline Bling", "Two Buttons"], a: "Distracted Boyfriend" },
+    { q: "Which reality show do I secretly enjoy?", o: ["Bigg Boss", "KBC", "Roadies", "Shark Tank India"], a: "Shark Tank India" },
+    { q: "What's my favorite podcast genre?", o: ["Comedy", "True Crime", "Self-help", "Business"], a: "Comedy" },
+    // NEW QUESTIONS - Lifestyle & Habits
+    { q: "What's my sleeping position?", o: ["On my back", "On my side", "On my stomach", "All over the place"], a: "On my side" },
+    { q: "How do I like my eggs in the morning?", o: ["Scrambled", "Fried", "Boiled", "I don't eat eggs"], a: "Scrambled" },
+    { q: "What's my favorite time of day?", o: ["Morning", "Afternoon", "Evening", "Late night"], a: "Late night" },
+    { q: "Do I prefer tea or coffee?", o: ["Tea", "Coffee", "Both equally", "Neither"], a: "Coffee" },
+    { q: "What's my favorite way to relax?", o: ["Watching movies", "Reading books", "Listening to music", "Taking a nap"], a: "Watching movies" },
+    { q: "How often do I order food delivery?", o: ["Almost daily", "2-3 times a week", "Once a week", "Rarely"], a: "2-3 times a week" },
+    { q: "What's my favorite type of weather?", o: ["Sunny", "Rainy", "Cloudy", "Snowy"], a: "Rainy" },
+    { q: "Do I prefer sweet or savory breakfast?", o: ["Sweet", "Savory", "Both", "I skip breakfast"], a: "Savory" },
+    { q: "What's my biggest kitchen disaster?", o: ["Burnt food", "Salt instead of sugar", "Forgot key ingredient", "Set off smoke alarm"], a: "Salt instead of sugar" },
+    { q: "How do I celebrate my birthday?", o: ["Big party", "Quiet dinner", "Trip", "Just like any other day"], a: "Quiet dinner" },
+    // NEW QUESTIONS - Personality & Values
+    { q: "What's my love language?", o: ["Words of Affirmation", "Acts of Service", "Receiving Gifts", "Quality Time"], a: "Quality Time" },
+    { q: "How do I handle stress?", o: ["Talk to friends", "Exercise", "Binge-watch shows", "Isolate myself"], a: "Talk to friends" },
+    { q: "What's my biggest strength?", o: ["Loyalty", "Creativity", "Intelligence", "Humor"], a: "Loyalty" },
+    { q: "What's my biggest weakness?", o: ["Procrastination", "Overthinking", "Impatience", "Too trusting"], a: "Procrastination" },
+    { q: "How do I make important decisions?", o: ["Pros and cons list", "Gut feeling", "Ask friends' opinion", "Flip a coin"], a: "Gut feeling" },
+    { q: "What motivates me most?", o: ["Money", "Recognition", "Personal growth", "Making others happy"], a: "Personal growth" },
+    { q: "How do I handle criticism?", o: ["Take it constructively", "Get defensive", "Ignore it", "Cry about it"], a: "Take it constructively" },
+    { q: "What's my communication style?", o: ["Direct and blunt", "Diplomatic and tactful", "Passive", "Varies by situation"], a: "Varies by situation" },
+    { q: "How do I show affection?", o: ["Hugs and physical touch", "Words of appreciation", "Doing favors", "Spending quality time"], a: "Spending quality time" },
+    { q: "What's my life motto?", o: ["Carpe Diem", "This too shall pass", "Work hard, play harder", "Live and let live"], a: "Live and let live" },
+    // NEW QUESTIONS - Travel & Experiences
+    { q: "What's my dream travel destination?", o: ["Europe", "Southeast Asia", "USA", "Australia"], a: "Europe" },
+    { q: "How do I prefer to travel?", o: ["Luxury resorts", "Budget backpacking", "Road trips", "Cruise ships"], a: "Road trips" },
+    { q: "What's the best trip I've ever taken?", o: ["Family vacation", "Solo trip", "Trip with friends", "Business trip that felt like vacation"], a: "Trip with friends" },
+    { q: "What's on my travel bucket list?", o: ["Northern Lights", "Safari in Africa", "Great Wall of China", "Machu Picchu"], a: "Northern Lights" },
+    { q: "How do I pack for trips?", o: ["Minimalist", "Everything I might need", "Organized with lists", "Last minute chaos"], a: "Everything I might need" },
+    { q: "What's my favorite type of vacation?", o: ["Beach relaxation", "Mountain adventure", "City exploration", "Cultural immersion"], a: "Mountain adventure" },
+    { q: "Do I prefer planned itineraries or spontaneous exploration?", o: ["Detailed planning", "Completely spontaneous", "Mix of both", "Let others plan"], a: "Mix of both" },
+    { q: "What's my favorite travel memory?", o: ["Watching sunrise/sunset", "Trying local food", "Getting lost in a new city", "Making local friends"], a: "Getting lost in a new city" },
+    { q: "How many countries have I visited?", o: ["None", "1-3", "4-7", "More than 7"], a: "1-3" },
+    { q: "What's my essential travel item?", o: ["Camera", "Comfortable shoes", "Power bank", "First aid kit"], a: "Power bank" },
+    // NEW QUESTIONS - Food & Cooking
+    { q: "What's my cooking skill level?", o: ["Master chef", "Pretty good", "Basic survival cooking", "Can burn water"], a: "Basic survival cooking" },
+    { q: "What's my favorite cuisine?", o: ["Indian", "Italian", "Chinese", "Mexican"], a: "Indian" },
+    { q: "Do I prefer cooking at home or eating out?", o: ["Love cooking", "Prefer eating out", "Equal balance", "Depends on mood"], a: "Equal balance" },
+    { q: "What's my go-to comfort food?", o: ["Ice cream", "Chocolate", "Pizza", "Home-cooked meal"], a: "Pizza" },
+    { q: "How spicy do I like my food?", o: ["Not spicy at all", "Mildly spicy", "Quite spicy", "Ghost pepper level"], a: "Quite spicy" },
+    { q: "What's my favorite snack?", o: ["Chips", "Cookies", "Fruits", "Namkeen"], a: "Chips" },
+    { q: "Do I have any food allergies?", o: ["Yes, serious", "Mild intolerance", "No allergies", "Not sure"], a: "No allergies" },
+    { q: "What's my favorite cooking show?", o: ["MasterChef", "Village Cooking Channel", "Sanjeev Kapoor", "Don't watch cooking shows"], a: "Village Cooking Channel" },
+    { q: "How do I like my steak/burger cooked?", o: ["Rare", "Medium rare", "Medium", "Well done"], a: "Medium" },
+    { q: "What's my favorite guilty pleasure food?", o: ["Fast food", "Sweets", "Junk food", "Midnight snacks"], a: "Midnight snacks" },
+    // NEW QUESTIONS - Work & Career
+    { q: "What's my ideal work environment?", o: ["Office", "Work from home", "Hybrid", "Co-working space"], a: "Work from home" },
+    { q: "How do I handle Monday blues?", o: ["Motivated and ready", "Need coffee to function", "Dread the day", "Don't believe in Monday blues"], a: "Need coffee to function" },
+    { q: "What's my preferred meeting style?", o: ["Quick and to the point", "Detailed discussion", "Creative brainstorming", "Avoid meetings if possible"], a: "Quick and to the point" },
+    { q: "How do I stay productive?", o: ["To-do lists", "Time blocking", "Last-minute pressure", "Natural flow"], a: "To-do lists" },
+    { q: "What's my biggest work pet peeve?", o: ["Unnecessary meetings", "Micromanagement", "Slow internet", "Loud coworkers"], a: "Unnecessary meetings" },
+    { q: "Do I prefer working alone or in a team?", o: ["Always alone", "Always in team", "Depends on project", "Mix of both"], a: "Mix of both" },
+    { q: "What's my career goal?", o: ["CEO/Leadership", "Work-life balance", "Financial independence", "Making a difference"], a: "Work-life balance" },
+    { q: "How do I celebrate work achievements?", o: ["Team dinner", "Quiet personal celebration", "Share on social media", "Move on to next thing"], a: "Quiet personal celebration" },
+    { q: "What's my preferred work schedule?", o: ["9-5 traditional", "Flexible hours", "Night owl schedule", "Early bird"], a: "Flexible hours" },
+    { q: "How do I handle work stress?", o: ["Exercise", "Talk to colleagues", "Take breaks", "Work through it"], a: "Take breaks" }
   ];
 
 // Random Quiz Questions
@@ -1354,52 +1745,633 @@ const randomQuizQuestions = [
     },
     {
         q: "What's the ideal length of a friendship?",
-        o: ["A few months", "A few years", "Many years", "Lif (typeof window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ === 'undefined') {
-      window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ = {
-        theme: 'dark',
-        accent: '#ff6bcb',
-        accent-secondary: '#ff9a00',
-        accent-tertiary: '#00d9ff'
-      };
-    }
-    }
-    
-    // Random Quiz Questions
-const randomQuizQuestions = [
-    {
-        q: "What's the most important quality in a friendship?",
-        o: ["Honesty", "Loyalty", "Trust", "Communication"],
-        a: "Trust",
-        e: "Trust forms the foundation of any strong friendship. Without trust, it's difficult to be vulnerable and open with your friends."
-    },
-    {
-        q: "How often should friends check in on each other?",
-        o: ["Daily", "Weekly", "Monthly", "Whenever we feel like it"],
-        a: "Weekly",
-        e: "Weekly check-ins strike a good balance between staying connected and giving each other space. Of course, this can vary based on the friendship!"
-    },
-    {
-        q: "What's the best way to resolve a conflict with a friend?",
-        o: ["Talk it out openly", "Give each other space", "Get a mutual friend to mediate", "Ignore it and hope it goes away"],
-        a: "Talk it out openly",
-        e: "Open communication is key to resolving conflicts. Addressing issues directly and honestly helps prevent misunderstandings from growing."
-    },
-    {
-        q: "What's the ideal length of a friendship?",
-        o: ["A few months", "A few years", "Many years", "Lif (typeof window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ === 'undefined') {
-      window.__PREMIUM_SETTINGS__PREMIUM_VERSION__ = {
-        theme: 'dark',
-        accent: '#ff6bcb',
-        accent-secondary: '#ff9a00',
-        accent-tertiary: '#00d9ff'
-      };
-    }
+        o: ["A few months", "A few years", "Many years", "Lifelong"],
+        a: "Lifelong",
+        e: "While all friendships have value, lifelong friendships that withstand the test of time are truly special and rare."
     }
 ];
 
 let creatorName = '', currentQuizForCreation = [], selectedQuestionCount = 5;
 let currentQuizData = null, currentQuestionIndex = 0, score = 0, takerName = '';
 let currentRandomQuestion = null;
+
+// --- AD QUEUE SYSTEM FOR FASTER LOADING ---
+const adQueue = [];
+let isProcessingAdQueue = false;
+
+function queueAdLoad(containerId, adType, delay = 0) {
+    adQueue.push({ containerId, adType, delay });
+    processAdQueue();
+}
+
+function processAdQueue() {
+    if (isProcessingAdQueue || adQueue.length === 0) return;
+    
+    isProcessingAdQueue = true;
+    const nextAd = adQueue.shift();
+    
+    setTimeout(() => {
+        loadAdScript(nextAd.containerId, nextAd.adType, 0);
+        isProcessingAdQueue = false;
+        
+        // Process next ad in queue
+        if (adQueue.length > 0) {
+            processAdQueue();
+        }
+    }, nextAd.delay);
+}
+
+// --- IMPROVED AD LOADING FUNCTION ---
+const loadedAds = new Set(); // Track loaded ads
+const failedAds = new Set(); // Track failed ads
+
+function loadAdScript(containerId, adType, retryCount = 0) {
+    // Prevent duplicate loads
+    if (loadedAds.has(containerId)) {
+        console.log(`✅ Ad already loaded: ${containerId}`);
+        return;
+    }
+    
+    // Max 1 retry (reduced from 2)
+    if (retryCount > 1) {
+        console.error(`❌ Max retries reached for: ${containerId}`);
+        failedAds.add(containerId);
+        return;
+    }
+    
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.warn(`⚠️ Container not found: ${containerId}`);
+        return;
+    }
+    
+    // Clear existing content
+    container.innerHTML = '';
+    
+    const adKey = adType === '468x60' ? '837c179e6a1caff05c48c5e8d161fa74' : 'c0efb17d6a9b43764d3fe4e7973a31a0';
+    const width = adType === '468x60' ? 468 : 300;
+    const height = adType === '468x60' ? 60 : 250;
+    
+    // Create ad container
+    const adDiv = document.createElement('div');
+    adDiv.style.minHeight = `${height}px`;
+    adDiv.style.width = '100%';
+    adDiv.style.display = 'flex';
+    adDiv.style.alignItems = 'center';
+    adDiv.style.justifyContent = 'center';
+    
+    // Add loading indicator
+    adDiv.innerHTML = '<div style="color: #666; font-size: 12px;">Loading ad...</div>';
+    container.appendChild(adDiv);
+    
+    // Small delay before loading script
+    setTimeout(() => {
+        // Create options script - SIMPLIFIED
+        const optionsScript = document.createElement('script');
+        optionsScript.type = 'text/javascript';
+        optionsScript.text = `
+            var atOptions = {
+                'key' : '${adKey}',
+                'format' : 'iframe',
+                'height' : ${height},
+                'width' : ${width},
+                'params' : {}
+            };
+        `;
+        adDiv.appendChild(optionsScript);
+        
+        // Create invoke script - SIMPLIFIED
+        const invokeScript = document.createElement('script');
+        invokeScript.type = 'text/javascript';
+        invokeScript.src = `//www.highperformanceformat.com/${adKey}/invoke.js?t=${Date.now()}`;
+        invokeScript.async = false; // Changed to false for sequential loading
+        
+        let loadTimeout;
+        
+        invokeScript.onload = () => {
+            clearTimeout(loadTimeout);
+            console.log(`✅ Ad loaded: ${containerId} (attempt ${retryCount + 1})`);
+            loadedAds.add(containerId);
+            // Remove loading text
+            const loadingText = adDiv.querySelector('div');
+            if (loadingText && loadingText.textContent === 'Loading ad...') {
+                loadingText.remove();
+            }
+        };
+        
+        invokeScript.onerror = () => {
+            clearTimeout(loadTimeout);
+            console.error(`❌ Ad failed: ${containerId} (attempt ${retryCount + 1})`);
+            adDiv.innerHTML = '<div style="color: #666; font-size: 12px; padding: 10px;">Ad Space</div>';
+            
+            // Retry after delay
+            if (retryCount < 1) {
+                setTimeout(() => {
+                    console.log(`🔄 Retrying ad: ${containerId}`);
+                    loadAdScript(containerId, adType, retryCount + 1);
+                }, 1000); // 1 second retry delay
+            }
+        };
+        
+        // Timeout fallback
+        loadTimeout = setTimeout(() => {
+            if (!loadedAds.has(containerId)) {
+                console.warn(`⏱️ Ad timeout: ${containerId}`);
+                invokeScript.onerror();
+            }
+        }, 4000); // Reduced timeout from 5000ms to 4000ms
+        
+        adDiv.appendChild(invokeScript);
+    }, 100);
+}
+
+// --- LOAD ALL ADS WITH QUEUE SYSTEM ---
+function loadAllAds() {
+    // Clear queue first
+    adQueue.length = 0;
+    
+    // Queue header ads first with small delay
+    queueAdLoad('headerAd', '468x60', 200);
+    queueAdLoad('headerAd2', '468x60', 500);
+    
+    // Then queue 300x250 ads with shorter gaps
+    queueAdLoad('topAd', '300x250', 800);
+    queueAdLoad('middleAd', '300x250', 1100);
+    queueAdLoad('startQuizAd', '300x250', 1400);
+    queueAdLoad('resultAd', '300x250', 1700);
+    queueAdLoad('creatorHistoryAd', '300x250', 2000);
+    queueAdLoad('playerHistoryAd', '300x250', 2300);
+}
+
+// --- IMAGE OPTIMIZATION ---
+class ImageOptimizer {
+  constructor() {
+    this.init();
+  }
+  
+  init() {
+    this.checkWebPSupport();
+    this.optimizeExistingImages();
+    this.setupLazyLoading();
+  }
+  
+  checkWebPSupport() {
+    const webP = new Image();
+    webP.onload = webP.onerror = () => {
+      const isSupported = (webP.height === 2);
+      document.body.classList.toggle('webp', isSupported);
+      document.body.classList.toggle('no-webp', !isSupported);
+    };
+    webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+  }
+  
+  optimizeExistingImages() {
+    const images = document.querySelectorAll('img:not([data-optimized])');
+    
+    images.forEach(img => {
+      // Skip if already optimized
+      if (img.dataset.optimized) return;
+      
+      // Add loading optimization
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      
+      // Mark as optimized
+      img.dataset.optimized = 'true';
+    });
+  }
+  
+  setupLazyLoading() {
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+              img.removeAttribute('data-src');
+            }
+            
+            observer.unobserve(img);
+          }
+        });
+      });
+      
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    }
+  }
+}
+
+// --- SEO FUNCTIONS ---
+
+// Dynamic Meta Tags for Each Page
+function updateMetaTags(page, data = {}) {
+    const metaDescriptions = {
+        home: "🔥 Create and share your own friendship quiz! See how well your friends know you with 150+ fun questions.",
+        create: `${data.creator} is creating a personalized friendship quiz. Join thousands creating fun quizzes!`,
+        play: `Take ${data.creator}'s friendship quiz! Test how well you know them with fun questions.`,
+        result: `Quiz results for ${data.taker}! Score: ${data.score}/${data.total}. Create your own friendship quiz now!`
+    };
+    
+    // Update description
+    const descMeta = document.querySelector('meta[name="description"]');
+    if (descMeta) descMeta.content = metaDescriptions[page] || metaDescriptions.home;
+    
+    // Update OG tags
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.content = metaDescriptions[page] || metaDescriptions.home;
+}
+
+// Add Breadcrumb Schema
+function addBreadcrumbSchema(path) {
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": []
+    };
+    
+    const paths = {
+        home: [{ name: "Home", url: window.location.origin }],
+        create: [
+            { name: "Home", url: window.location.origin },
+            { name: "Create Quiz", url: `${window.location.origin}#create` }
+        ],
+        play: [
+            { name: "Home", url: window.location.origin },
+            { name: "Play Quiz", url: window.location.href }
+        ]
+    };
+    
+    const pathItems = paths[path] || paths.home;
+    pathItems.forEach((item, index) => {
+        breadcrumbSchema.itemListElement.push({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name,
+            "item": item.url
+        });
+    });
+    
+    // Remove old breadcrumb schema if exists
+    const oldSchema = document.querySelector('script[data-schema="breadcrumb"]');
+    if (oldSchema) oldSchema.remove();
+    
+    // Add new schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'breadcrumb');
+    script.textContent = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(script);
+}
+
+// Add Canonical Tags
+function updateCanonicalTag() {
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        document.head.appendChild(canonical);
+    }
+    
+    // Remove hash for canonical URL
+    const url = new URL(window.location.href);
+    url.hash = '';
+    canonical.href = url.toString();
+}
+
+// Add Review Schema (Dynamic)
+function addReviewSchema() {
+    const reviewSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "BFF Quiz",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1250",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Priya Sharma" },
+                "datePublished": "2024-10-25",
+                "reviewBody": "Amazing app! Created a quiz for my friends and we had so much fun.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Rahul Verma" },
+                "datePublished": "2024-10-20",
+                "reviewBody": "Love this app! It's become our go-to activity at parties.",
+                "reviewRating": { "@type": "Rating", "ratingValue": "4" }
+            }
+        ]
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'review');
+    script.textContent = JSON.stringify(reviewSchema);
+    document.head.appendChild(script);
+}
+
+// Add JSON-LD for Quiz Pages
+function addQuizSchema(quizData) {
+    const quizSchema = {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": `${quizData.creator}'s Friendship Quiz`,
+        "description": `Test how well you know ${quizData.creator} with this fun friendship quiz`,
+        "numberOfQuestions": quizData.questions.length,
+        "educationalLevel": "All Ages",
+        "inLanguage": "en",
+        "author": {
+            "@type": "Person",
+            "name": quizData.creator
+        }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'quiz');
+    script.textContent = JSON.stringify(quizSchema);
+    document.head.appendChild(script);
+}
+
+// H1 Optimization
+const h1Optimization = {
+    home: "Create Your Own BFF Friendship Quiz Online - Free Quiz Maker",
+    create: "Design Your Personalized Friendship Quiz - 150+ Questions",
+    play: "Test Your Friendship - Take the BFF Quiz Challenge",
+    result: "Quiz Results & Leaderboard - See Who Knows You Best"
+};
+
+function updateH1(page) {
+    const h1 = document.querySelector('h1');
+    if (h1 && h1Optimization[page]) {
+        h1.textContent = h1Optimization[page];
+    }
+}
+
+// --- ADVANCED SHORT LINK GENERATOR ---
+const ShortLinkGenerator = {
+  // Character set (excluding similar looking chars: 0/O, 1/l, etc.)
+  chars: 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789',
+  
+  // Generate short ID (6 characters)
+  generateShortId: function() {
+    let result = '';
+    for (let i = 0; i < 6; i++) {
+      result += this.chars.charAt(Math.floor(Math.random() * this.chars.length));
+    }
+    return result;
+  },
+  
+  // Encode username into URL-safe format
+  encodeUsername: function(username) {
+    return btoa(username).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
+  },
+  
+  // Decode username from encoded format
+  decodeUsername: function(encoded) {
+    try {
+      return atob(encoded);
+    } catch (e) {
+      return '';
+    }
+  },
+  
+  // Generate complete short link
+  generateLink: function(creator) {
+    const shortId = this.generateShortId();
+    const encodedName = this.encodeUsername(creator);
+    return `${shortId}-${encodedName}`;
+  },
+  
+  // Parse link to get quiz ID and creator name
+  parseLink: function(linkCode) {
+    const parts = linkCode.split('-');
+    return {
+      id: parts[0],
+      creator: parts[1] ? this.decodeUsername(parts[1]) : ''
+    };
+  }
+};
+
+// --- FOMO FEATURES ---
+
+// 1. Live Player Counter
+function updateLivePlayerCount() {
+  const count = Math.floor(Math.random() * 50) + 100; // 100-150 players
+  const badge = document.createElement('div');
+  badge.className = 'fomo-badge';
+  badge.innerHTML = `🔥 ${count} playing now!`;
+  document.body.appendChild(badge);
+}
+
+// 2. Recent Activity Ticker
+function showRecentActivity() {
+  const activities = [
+    'Priya just created a quiz!',
+    'Rahul scored 10/10! 🎉',
+    'Sneha challenged 5 friends!',
+    'Arjun is playing now...',
+    'Maya got 100% score! 🏆'
+  ];
+  
+  const ticker = document.createElement('div');
+  ticker.className = 'activity-ticker';
+  
+  function showActivity() {
+    const activity = activities[Math.floor(Math.random() * activities.length)];
+    ticker.textContent = activity;
+    document.body.appendChild(ticker);
+    
+    setTimeout(() => {
+      ticker.style.animation = 'slideOutLeft 0.5s ease-in';
+      setTimeout(() => {
+        if (ticker.parentNode) ticker.remove();
+      }, 500);
+    }, 4000);
+  }
+  
+  // Show first activity after 5 seconds
+  setTimeout(showActivity, 5000);
+  
+  // Show random activity every 15-20 seconds
+  setInterval(() => {
+    if (Math.random() < 0.5) { // 50% chance
+      showActivity();
+    }
+  }, 15000);
+}
+
+// 3. Urgency Timer
+function addUrgencyTimer() {
+  const timer = document.createElement('div');
+  timer.className = 'urgency-timer';
+  
+  let minutes = 4;
+  let seconds = 59;
+  
+  function updateTimer() {
+    timer.textContent = `⏰ Limited Offer: ${minutes}:${seconds.toString().padStart(2, '0')} left!`;
+    
+    if (seconds === 0) {
+      if (minutes === 0) {
+        minutes = 4;
+        seconds = 59;
+      } else {
+        minutes--;
+        seconds = 59;
+      }
+    } else {
+      seconds--;
+    }
+  }
+  
+  updateTimer();
+  setInterval(updateTimer, 1000);
+  
+  document.body.appendChild(timer);
+}
+
+// 4. Social Proof Popup
+function showSocialProof() {
+  const proofs = [
+    { name: 'Anjali from Mumbai', action: 'just created a quiz', time: '2 min ago' },
+    { name: 'Vikram from Delhi', action: 'scored 100%', time: '5 min ago' },
+    { name: 'Neha from Pune', action: 'challenged 10 friends', time: '8 min ago' }
+  ];
+  
+  const popup = document.createElement('div');
+  popup.className = 'social-proof-popup';
+  
+  function showProof() {
+    const proof = proofs[Math.floor(Math.random() * proofs.length)];
+    popup.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff6bcb, #ff9a00); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+          👤
+        </div>
+        <div>
+          <div style="font-weight: bold; color: #0f0f23;">${proof.name}</div>
+          <div style="font-size: 12px; color: #666;">${proof.action}</div>
+          <div style="font-size: 11px; color: #999;">${proof.time}</div>
+        </div>
+      </div>
+    `;
+    
+    document.body.appendChild(popup);
+    
+    setTimeout(() => {
+      popup.style.transform = 'translateY(0)';
+    }, 100);
+    
+    setTimeout(() => {
+      popup.style.transform = 'translateY(150%)';
+      setTimeout(() => {
+        if (popup.parentNode) popup.remove();
+      }, 500);
+    }, 5000);
+  }
+  
+  // Show first proof after 8 seconds
+  setTimeout(showProof, 8000);
+  
+  // Show random proof every 20-30 seconds
+  setInterval(() => {
+    if (Math.random() < 0.4) {
+      showProof();
+    }
+  }, 25000);
+}
+
+// --- Custom Quiz Storage System ---
+const CustomQuizStorage = {
+    // Save quiz data and return a short ID
+    saveQuiz: function(quizData) {
+        try {
+            // Generate a unique ID
+            const id = this.generateShortId();
+            
+            // Store the quiz data
+            localStorage.setItem(`quiz_${id}`, JSON.stringify(quizData));
+            
+            // Add to index for easier retrieval
+            let index = JSON.parse(localStorage.getItem('quizIndex') || '[]');
+            index.push({
+                id: id,
+                creator: quizData.creator,
+                created: new Date().toISOString(),
+                expiry: quizData.expiry
+            });
+            localStorage.setItem('quizIndex', JSON.stringify(index));
+            
+            return id;
+        } catch (e) {
+            console.error("Failed to save quiz:", e);
+            throw new Error("Could not save quiz data");
+        }
+    },
+    
+    // Load quiz data by ID
+    loadQuiz: function(id) {
+        try {
+            const quizData = JSON.parse(localStorage.getItem(`quiz_${id}`));
+            if (!quizData) {
+                throw new Error("Quiz not found");
+            }
+            
+            // Check if quiz has expired
+            if (new Date() > new Date(quizData.expiry)) {
+                throw new Error("Quiz has expired");
+            }
+            
+            return quizData;
+        } catch (e) {
+            console.error("Failed to load quiz:", e);
+            throw new Error("Could not load quiz data");
+        }
+    },
+    
+    // Generate a short ID
+    generateShortId: function() {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < 8; i++) {
+            result += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return result;
+    },
+    
+    // Clean up expired quizzes
+    cleanupExpiredQuizzes: function() {
+        try {
+            const index = JSON.parse(localStorage.getItem('quizIndex') || '[]');
+            const now = new Date();
+            
+            const updatedIndex = index.filter(item => {
+                if (new Date(item.expiry) > now) {
+                    return true; // Keep non-expired quizzes
+                } else {
+                    // Remove expired quiz data
+                    localStorage.removeItem(`quiz_${item.id}`);
+                    return false; // Remove from index
+                }
+            });
+            
+            localStorage.setItem('quizIndex', JSON.stringify(updatedIndex));
+        } catch (e) {
+            console.error("Failed to cleanup expired quizzes:", e);
+        }
+    }
+};
 
 // --- NOTIFICATION SYSTEM ---
 function showNotification(title, message, type = 'success') {
@@ -1454,6 +2426,38 @@ dismissBtn.addEventListener('click', () => {
 function showPage(pageId) { 
   document.querySelectorAll('.container').forEach(el => el.classList.add('hidden')); 
   document.getElementById(pageId).classList.remove('hidden');
+  
+  // Update SEO elements for the new page
+  updateCanonicalTag();
+  updateH1(pageId);
+  updateMetaTags(pageId);
+  addBreadcrumbSchema(pageId);
+}
+
+// --- RESET AND GO HOME FUNCTION ---
+function resetAndGoHome() {
+    // Reset all quiz state variables
+    creatorName = '';
+    currentQuizForCreation = [];
+    selectedQuestionCount = 5;
+    currentQuizData = null;
+    currentQuestionIndex = 0;
+    score = 0;
+    takerName = '';
+    currentRandomQuestion = null;
+    
+    // Clear input fields
+    document.getElementById('userName').value = '';
+    document.getElementById('takerName').value = '';
+    
+    // Reset URL hash
+    window.location.hash = '';
+    
+    // Navigate to home page
+    showPage('home');
+    
+    // Show success notification
+    showNotification('Success', 'Ready to create a new quiz!');
 }
 
 // --- Random Quiz Functions ---
@@ -1470,6 +2474,10 @@ function generateNewRandomQuestion() {
   // Select a random question
   const randomIndex = Math.floor(Math.random() * randomQuizQuestions.length);
   currentRandomQuestion = randomQuizQuestions[randomIndex];
+  
+  // Display the question
+  document.getElementById('randomQuiz').classList.remove('hidden');
+  document.getElementById('randomResult').classList.add('hidden');
   
   // Display the question
   document.getElementById('randomQuestionText').textContent = currentRandomQuestion.q;
@@ -1604,11 +2612,14 @@ function renderModalList() {
     const listEl = document.getElementById('questionList');
     const filter = document.getElementById('questionSearch').value.toLowerCase();
     listEl.innerHTML = '';
-    allQuestions.filter(q => q.q.toLowerCase().includes(filter)).forEach(q => {
+    
+    const filteredQuestions = allQuestions.filter(q => q.q.toLowerCase().includes(filter));
+    
+    filteredQuestions.forEach(q => {
         const originalIndex = allQuestions.indexOf(q);
         const item = document.createElement('label');
-        item.className = 'modal-question-item';
-        item.innerHTML = `<input type="checkbox" value="${originalIndex}">${q.q}`;
+        item.className = 'question-item';
+        item.innerHTML = `<input type="checkbox" value="${originalIndex}"><span class="question-item-text">${q.q}</span>`;
         listEl.appendChild(item);
     });
     updateModalCounter();
@@ -1628,7 +2639,7 @@ function addSelectedQuestions() {
       showNotification('Error', 'Please select at least one question.', 'error');
       return; 
     }
-    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value]));
+    currentQuizForCreation = Array.from(selectedCheckboxes).map(cb => JSON.parse(JSON.stringify(allQuestions[cb.value])));
     renderCreationQuestions(); 
     closeQuestionModal();
     showNotification('Success', 'Questions added successfully!');
@@ -1648,13 +2659,36 @@ function shuffleSelectedQuestions() {
 function renderCreationQuestions() {
     const container = document.getElementById('questionsContainer');
     container.innerHTML = '';
+    
     if (currentQuizForCreation.length === 0) {
         container.innerHTML = '<p style="text-align:center; opacity: 0.7;">Your selected questions will appear here for final review.</p>';
         document.getElementById('creationControls').classList.add('hidden');
         document.getElementById('questionCounter').textContent = '';
         return;
     }
-    currentQuizForCreation.forEach((q, index) => container.appendChild(createQuestionBlock(q, index)));
+    
+    // Add the edit note
+    const editNote = document.createElement('div');
+    editNote.className = 'edit-note';
+    editNote.textContent = 'You can edit your questions and answers for a better experience';
+    container.appendChild(editNote);
+    
+    // Add questions with ad after every question
+    currentQuizForCreation.forEach((q, index) => {
+        container.appendChild(createQuestionBlock(q, index));
+        
+        // Add ad banner after every question (but not after the last question)
+        if (index < currentQuizForCreation.length - 1) {
+            const adBanner = document.createElement('div');
+            adBanner.className = 'ad-space ad-space-horizontal';
+            adBanner.id = `questionAd${index}`;
+            container.appendChild(adBanner);
+            
+            // Queue ad loading with minimal delay for faster loading
+            queueAdLoad(`questionAd${index}`, '468x60', 200 + (index * 100));
+        }
+    });
+    
     document.getElementById('questionCounter').textContent = `Reviewing ${currentQuizForCreation.length} Questions`;
     document.getElementById('creationControls').classList.remove('hidden');
 }
@@ -1682,42 +2716,32 @@ function updateCreationAnswer(index, value) {
     renderCreationQuestions(); // Refresh only when radio button is clicked
 }
 
-// --- NEW: Using JSONBlob for URL Shortening ---
-async function saveQuizToJSONBlob(data) {
-    const response = await fetch('https://jsonblob.com/api/jsonBlob', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify(data)
-    });
-    if (!response.ok) {
-        throw new Error('Failed to create quiz data blob.');
-    }
-    const location = response.headers.get('Location');
-    return location.split('/').pop(); // Extract the ID from the full URL
-}
-
-async function loadQuizFromJSONBlob(id) {
-    const response = await fetch(`https://jsonblob.com/api/jsonBlob/${id}`);
-    if (!response.ok) {
-        throw new Error('Failed to load quiz data.');
-    }
-    return await response.json();
-}
-
+// --- Quiz Creation with Custom Storage ---
 async function finishAndShareQuiz() {
     const finishButton = document.querySelector('#creationControls button:last-child');
     finishButton.disabled = true;
     finishButton.textContent = 'Creating Link...';
 
-    const expiryDate = new Date(); expiryDate.setHours(expiryDate.getHours() + 24);
-    const quizData = { id: 'quiz_' + Date.now(), creator: creatorName, questions: currentQuizForCreation, expiry: expiryDate.toISOString() };
+    const expiryDate = new Date(); 
+    expiryDate.setHours(expiryDate.getHours() + 24);
+    
+    // Generate short link code
+    const linkCode = ShortLinkGenerator.generateLink(creatorName);
+    
+    const quizData = { 
+        id: linkCode, // Use short code as ID
+        creator: creatorName, 
+        questions: currentQuizForCreation, 
+        expiry: expiryDate.toISOString() 
+    };
 
     try {
-        const blobId = await saveQuizToJSONBlob(quizData);
-        const url = `${window.location.href.split('?')[0].split('#')[0]}#play?id=${blobId}`;
+        CustomQuizStorage.cleanupExpiredQuizzes();
+        localStorage.setItem(`quiz_${linkCode}`, JSON.stringify(quizData));
+        
+        // SHORT URL: bffquiz.com/q/Abc123-TmFtZQ
+        const url = `${window.location.origin}${window.location.pathname}#q/${linkCode}`;
+        
         saveCreatorHistory(quizData, url); 
         displayShareableLink(url);
     } catch (e) {
@@ -1742,21 +2766,64 @@ function displayShareableLink(url) {
     const shareBox = document.getElementById('shareBox');
     shareBox.classList.remove('hidden');
     document.getElementById('shareLink').textContent = url;
-    const homeUrl = window.location.href.split('?')[0].split('#')[0];
+    // Fixed URL generation for share message
+    const homeUrl = window.location.origin + window.location.pathname;
     const shareMessage = `🔥 ${creatorName} has challenged you to a Friendship Quiz! 🔥\n\n"Kya tum sach me mujhe jaante ho? 🤔\n\nClick here to prove it and see your score! 👉 ${url}\n\n---\n👉 Create your own quiz here: ${homeUrl}`;
     const encodedShareMessage = encodeURIComponent(shareMessage);
     const encodedUrl = encodeURIComponent(url);
     const encodedTitle = encodeURIComponent(`🔥 ${creatorName} has challenged you!`);
     
-    document.getElementById('socialShareButtons').innerHTML = `
-        <button class="btn-purple social-btn-stacked" onclick="copyToClipboard(document.getElementById('shareLink').textContent)">Copy Quiz Link</button>
-        <a href="https://api.whatsapp.com/send?text=${encodedShareMessage}" target="_blank" class="btn-purple social-btn-stacked">WhatsApp</a>
-        <a href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Telegram</a>
-        <a href="https://www.facebook.com/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>
-        <button onclick="shareOnInstagram()" class="btn-purple social-btn-stacked">Instagram</button>
-        <a href="https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Twitter</a>
-        <a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>
-    `;
+    // Create social share buttons with ads between them
+    const socialButtonsHTML = [];
+    
+    // Add Copy Quiz Link button
+    socialButtonsHTML.push(`<button class="btn-purple social-btn-stacked" onclick="copyToClipboard(document.getElementById('shareLink').textContent)">Copy Quiz Link</button>`);
+    
+    // Add ad after first button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd1" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add WhatsApp button
+    socialButtonsHTML.push(`<a href="https://api.whatsapp.com/send?text=${encodedShareMessage}" target="_blank" class="btn-purple social-btn-stacked">WhatsApp</a>`);
+    
+    // Add ad after second button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd2" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add Telegram button
+    socialButtonsHTML.push(`<a href="https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Telegram</a>`);
+    
+    // Add ad after third button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd3" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add Facebook button (Fixed URL)
+    socialButtonsHTML.push(`<a href="https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Facebook</a>`);
+    
+    // Add ad after fourth button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd4" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add Instagram button
+    socialButtonsHTML.push(`<button onclick="shareOnInstagram()" class="btn-purple social-btn-stacked">Instagram</button>`);
+    
+    // Add ad after fifth button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd5" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add Twitter button
+    socialButtonsHTML.push(`<a href="https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}" target="_blank" class="btn-purple social-btn-stacked">Twitter</a>`);
+    
+    // Add ad after sixth button
+    socialButtonsHTML.push(`<div class="ad-space ad-space-horizontal" id="shareAd6" style="margin: 10px 0;"><!-- Ad will be loaded by JavaScript --></div>`);
+    
+    // Add Threads button
+    socialButtonsHTML.push(`<a href="https://www.threads.net/share?text=${encodedTitle}&url=${encodedUrl}" target="_blank" class="btn-purple social-btn-stacked">Threads</a>`);
+    
+    document.getElementById('socialShareButtons').innerHTML = socialButtonsHTML.join('');
+    
+    // Queue ads with shorter delays for faster loading
+    queueAdLoad('shareAd1', '468x60', 200);
+    queueAdLoad('shareAd2', '468x60', 500);
+    queueAdLoad('shareAd3', '468x60', 800);
+    queueAdLoad('shareAd4', '468x60', 1100);
+    queueAdLoad('shareAd5', '468x60', 1400);
+    queueAdLoad('shareAd6', '468x60', 1700);
 }
 function shareOnInstagram() {
     const url = document.getElementById('shareLink').textContent;
@@ -1790,36 +2857,73 @@ async function routeOnLoad() {
         return;
     }
     
+    // Handle short link format: #q/Abc123-TmFtZQ
+    if (hash.startsWith('#q/')) {
+        const linkCode = hash.substring(3); // Remove #q/
+        
+        try {
+            const quizData = JSON.parse(localStorage.getItem(`quiz_${linkCode}`));
+            
+            if (!quizData) {
+                throw new Error("Quiz not found");
+            }
+            
+            if (new Date() > new Date(quizData.expiry)) {
+                throw new Error("Quiz has expired");
+            }
+            
+            currentQuizData = quizData;
+            showPage('play');
+            
+            // Parse creator name from link
+            const linkInfo = ShortLinkGenerator.parseLink(linkCode);
+            document.getElementById('quizTitle').textContent = `${linkInfo.creator}'s Friendship Quiz 🎯`;
+            document.getElementById('playTakerName').classList.remove('hidden');
+            document.getElementById('quizContentWrapper').classList.add('hidden');
+            
+            addQuizSchema(currentQuizData);
+        } catch (e) { 
+          console.error("Error loading quiz:", e); 
+          showPage('home'); 
+          showNotification('Error', 'Invalid or expired quiz link.', 'error');
+          window.location.hash = ''; 
+        }
+        return;
+    }
+    
     if (hash.startsWith('#play?id=')) {
         const params = new URLSearchParams(hash.substring(6)); // #play?id=... -> id=...
-        const blobId = params.get('id');
-        if (!blobId) {
+        const id = params.get('id');
+        if (!id) {
             showPage('home');
             return;
         }
         try {
-            currentQuizData = await loadQuizFromJSONBlob(blobId);
-            if (new Date() > new Date(currentQuizData.expiry)) {
-                showPage('home');
-                document.getElementById('home').insertAdjacentHTML('afterbegin', '<div class="alert-box">This quiz link has expired (valid for 24 hours).</div>');
-                window.location.hash = '';
-                return;
-            }
+            // Try to load using custom storage first
+            currentQuizData = CustomQuizStorage.loadQuiz(id);
+            
             showPage('play');
             document.getElementById('quizTitle').textContent = `A quiz by ${currentQuizData.creator}`;
             document.getElementById('playTakerName').classList.remove('hidden');
             document.getElementById('quizContentWrapper').classList.add('hidden');
+            
+            // Add quiz schema for SEO
+            addQuizSchema(currentQuizData);
         } catch (e) { 
           console.error("Error loading quiz data:", e); 
           showPage('home'); 
-          showNotification('Error', 'Invalid or corrupted quiz link.', 'error');
+          showNotification('Error', 'Invalid or expired quiz link.', 'error');
           window.location.hash = ''; 
         }
     } else if (hash.startsWith('#dummy')) {
         showPage('dummyPage');
     } else if (hash.startsWith('#hidden')) {
         showPage('hiddenPage');
-    } else { showPage('home'); }
+    } else { 
+        showPage('home');
+        // Add review schema on home page
+        addReviewSchema();
+    }
 }
 function startQuiz() {
     takerName = document.getElementById('takerName').value.trim();
@@ -1834,8 +2938,28 @@ function startQuiz() {
 function loadQuestion() {
     if (currentQuestionIndex >= currentQuizData.questions.length) { finishQuiz(); return; }
     const q = currentQuizData.questions[currentQuestionIndex];
-    document.getElementById('quizContent').innerHTML = `<div class="question-block"><h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3><div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div><button class="btn-purple" onclick="submitAnswer()">Next Question</button></div></div></div>`;
-    document.getElementById('inQuizAd').classList.remove('hidden'); // Show ad with question
+    
+    // Create ad after every question
+    let adHtml = '';
+    if (currentQuestionIndex < currentQuizData.questions.length - 1) {
+        adHtml = `<div class="ad-space ad-space-horizontal" id="quizAd${currentQuestionIndex}" style="margin: 15px 0;">
+            <!-- Ad will be loaded by JavaScript -->
+        </div>`;
+    }
+    
+    document.getElementById('quizContent').innerHTML = `
+        <div class="question-block">
+            <h3>Q ${currentQuestionIndex + 1}: ${q.q}</h3>
+            <div class="option-grid">${q.o.map(opt => `<label class="option-item"><input type="radio" name="answer" value="${opt}">${opt}</label>`).join("")}</div>
+            <button class="btn-purple" onclick="submitAnswer()">Next Question</button>
+        </div>
+        ${adHtml}
+    `;
+    
+    // Queue ad loading if needed with minimal delay for faster loading
+    if (currentQuestionIndex < currentQuizData.questions.length - 1) {
+        queueAdLoad(`quizAd${currentQuestionIndex}`, '468x60', 200);
+    }
 }
 function submitAnswer() {
     const selected = document.querySelector('input[name="answer"]:checked');
@@ -1857,8 +2981,12 @@ function displayResults() {
     document.getElementById('resultTitle').textContent = "Quiz Complete!";
     document.getElementById('leaderboard').classList.remove('hidden');
     document.getElementById('shareBox').classList.add('hidden');
-    document.getElementById('quizContentWrapper').classList.add('hidden'); // Hide the in-quiz ad wrapper
+    document.getElementById('quizContentWrapper').classList.add('hidden');
     document.getElementById('scoreText').innerHTML = `<h3 style="text-align:center;">Congratulations, ${takerName}!</h3><p style="font-size: 1.2rem; margin: 10px 0; text-align:center;">You scored ${score} out of ${currentQuizData.questions.length}</p>`;
+    
+    // Update meta tags for result page
+    updateMetaTags('result', { taker: takerName, score: score, total: currentQuizData.questions.length });
+    
     updateLeaderboard();
 }
 function saveScore() {
@@ -1892,9 +3020,50 @@ function updateLeaderboard() {
     else listEl.innerHTML = leaderboardData.map((entry, index) => `<div class="leaderboard-item"><strong>${index + 1}. ${entry.name}</strong><span style="float:right; font-weight:bold;">${entry.score}/${entry.total}</span></div>`).join('');
 }
 
-// Initialize app on page load
-window.addEventListener('load', routeOnLoad);
-window.addEventListener('hashchange', routeOnLoad);
+// --- MODAL SHUFFLE FUNCTION ---
+function shuffleModalQuestions() {
+    const listEl = document.getElementById('questionList');
+    const items = Array.from(listEl.children);
+    
+    // Fisher-Yates shuffle
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        listEl.insertBefore(items[j], items[i].nextSibling);
+    }
+    
+    showNotification('Success', 'Questions shuffled!');
+}
+
+// Simplified initialization
+window.addEventListener('load', () => {
+    // Route to the correct page
+    routeOnLoad();
+    
+    // Load all ads with queue system
+    loadAllAds();
+    
+    // Initialize SEO elements
+    updateCanonicalTag();
+    updateH1('home');
+    updateMetaTags('home');
+    addBreadcrumbSchema('home');
+    
+    // Initialize image optimizer
+    new ImageOptimizer();
+    
+    // Initialize FOMO features
+    setTimeout(() => {
+        updateLivePlayerCount();
+        showRecentActivity();
+        addUrgencyTimer();
+        showSocialProof();
+    }, 2000);
+});
+
+// Handle hash changes
+window.addEventListener('hashchange', () => {
+    routeOnLoad();
+});
 </script>
 </body>
 </html>
